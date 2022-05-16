@@ -28,10 +28,8 @@ header {
  
 }
 
-/* .header{
-    position:sticky;
-    
-} */
+ 
+
 
 .immagine_zuppa img {
     width: 100%;
@@ -237,7 +235,7 @@ margin: auto 2em;
 aside input{
     height: 5em;  
     width: 90%;
-    margin top: 3em;
+    margin-top: 3em;
 }
 aside button{
     background-color: #7EC3BB;
