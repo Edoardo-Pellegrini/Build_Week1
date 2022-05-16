@@ -1,4 +1,46 @@
 /* Edoardo, Francesca */
+body{
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    
+
+
+}
+
+main{
+    padding: 0 0.8rem;
+}
+span{
+    color: #ff530a;
+}
+header {
+    display: flex;
+    width: 85%;
+   /*  margin-top: -85px; */
+    position:sticky;
+    top:-85px;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.76);
+    z-index: 3;
+    margin: 0 auto;
+    margin-top: -85px;
+ 
+}
+
+/* .header{
+    position:sticky;
+    
+} */
+
+.immagine_zuppa img {
+    width: 100%;
+    z-index: 1;
+    /* position: relative; */
+}
+
+
+
 
 
 
@@ -9,6 +51,86 @@
 
 
 /* Simone */
+
+                    /* Blocco Grigio */
+.grey_block{
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+.grey_block img{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.title_grey{
+    margin: 0 1rem;
+}
+.orange_text{
+    font-weight: bold;
+    color: #ff530a;
+
+}
+hr{
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem; 
+}
+.text_grey{
+    line-height: 2rem;
+    padding: 2rem;
+}
+.text_grey p{
+color: grey;
+/* margin: 0 1rem 1rem 1rem; */
+}
+                /* Blocco Info Menu */
+.blog_food{
+    width: 100%;
+   
+    background-image: url(/images/blog/blog-bg.jpg) ;
+    background-size: cover;
+    background-attachment:fixed ;
+    /* opacity: 80%; */
+}
+
+.title_blog{
+    text-align: center;
+    margin: 0 0;
+    padding: 4rem 2rem 0.5rem 2rem; 
+}
+.blog_info h1{
+    margin: 2rem;
+}
+
+.blog_container{
+    text-align: center;
+    margin: 1rem 0.8rem;
+    background-color: white;
+}
+.blog_container img{
+    width: 100%;
+}
+ .blog_img1{
+    
+    margin: 1rem 0.8rem;
+    text-align: center;
+} 
+.blog_img1{
+    background-color: white;
+}
+.blog_img1 img{
+     width: 100%; 
+     margin: 0 0;
+}
+.blog_img1 div{
+    background-color: white;
+    padding: 1rem;
+    margin: 0 0;
+    box-sizing: border-box;
+}
 
 
 
@@ -95,3 +217,37 @@ span {
 
 
 /* VitalijS */
+
+aside{
+    background-image: url(../images/subscribe-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 35em;
+    color: white;
+    
+}
+aside > div{
+position: relative;
+top: 25%;
+}
+aside div p:nth-child(2){
+margin: auto 2em;
+}
+aside input{
+    height: 5em;  
+    width: 90%;
+    margin top: 3em;
+}
+aside button{
+    background-color: #7EC3BB;
+    border: 0;
+    height: 5em;
+    color: white;
+    width: 45%;
+    display:block;
+    margin-top: 2em;
+    
+   
+}
+
