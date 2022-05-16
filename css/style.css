@@ -3,14 +3,9 @@ body{
     font-family: sans-serif;
     font-size: 100%;
     margin: 0 auto;
-    
-
-
 }
 
-main{
-    padding: 0 0.8rem;
-}
+
 span{
     color: #ff530a;
 }
@@ -28,26 +23,14 @@ header {
  
 }
 
-/* .header{
-    position:sticky;
-    
-} */
+ 
+
 
 .immagine_zuppa img {
     width: 100%;
     z-index: 1;
     /* position: relative; */
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Simone */
@@ -84,73 +67,146 @@ hr{
 }
 .text_grey p{
 color: grey;
-/* margin: 0 1rem 1rem 1rem; */
+
 }
-                /* Blocco Info Menu */
+                                                     /* Blocco Info Menu */
 .blog_food{
     width: 100%;
-   
-    background-image: url(/images/blog/blog-bg.jpg) ;
-    background-size: cover;
+   height: 100%;
+    background-image: url(../images/blog/blog-bg.jpg) ;
+    background-size:auto;
+    background-position: left;
     background-attachment:fixed ;
-    /* opacity: 80%; */
+    padding: 3rem 0 3.5rem 0;
+
 }
 
+/* .nero{
+    background-color: rgba(0, 0, 0, 0.361);
+    z-index: 1; 
+}*/
 .title_blog{
     text-align: center;
     margin: 0 0;
     padding: 4rem 2rem 0.5rem 2rem; 
 }
-.blog_info h1{
-    margin: 2rem;
-}
+
 
 .blog_container{
+    height: auto;
     text-align: center;
-    margin: 1rem 0.8rem;
+    margin: 1rem 1rem 4rem 1rem;
     background-color: white;
 }
+
 .blog_container img{
     width: 100%;
-}
- .blog_img1{
     
-    margin: 1rem 0.8rem;
-    text-align: center;
-} 
-.blog_img1{
-    background-color: white;
+   
+    transition: 1s; 
 }
-.blog_img1 img{
-     width: 100%; 
-     margin: 0 0;
+.blog_container img:hover{
+    transform: scale(1.2) rotate(10deg);
+      
+    overflow: hidden;
 }
-.blog_img1 div{
-    background-color: white;
-    padding: 1rem;
-    margin: 0 0;
-    box-sizing: border-box;
+.more_info{
+    text-align: left;
+    padding: 0 0.8rem;
+}
+.text{
+    padding: 1.5rem 1.5rem;
+}
+.more_info input{
+    padding: 2rem 4rem;
+    background-color: #ff530a;
+    color: white;
+    border: none;
+    transition-property: background-color ;
+    transition-duration: 1s;
 }
 
-
-
-
-
-
-
+.more_info input:hover{
+    background-color: #c53416;
+}
 
 
 /* Claudia */
+.Menu {
+    color: #333333;
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 4.5rem 0rem 9rem;
+}
+.Menu h1 {
+    color: #2E2E2E;
+    padding: 2.5rem 0rem 0rem 0rem;
+}
+span {
+    color: #FF530A;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.Menu p {
+    color: #9D9D9D;
+    font-size: 16px;
+    padding: 1.5rem 0rem 0rem 0rem;
+}
 
+.Prezzi a {
+    color: #FF4F02;
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    padding: 1.8rem 6.3rem;
+    border: 1px solid #FF4F02;
+    float: right;
+    /* width: 70%; */
+    cursor: pointer;
+    font-weight: bold;
+}
+.Prezzi {
+    padding: 5rem 0rem 0rem 0rem;
+    text-align: left;
+}
+.Prezzi .Titolo {
+    font-size: 14px;
+    /* padding: 30px 0px; */
+}
 
-
-
-
-
+.Titolo h3 {
+    font-size: 20px;
+    padding: 2rem 0rem;
+}
+.Titolo h3 span {
+    font-size: 20px;
+}
+.Prezzi li {
+    list-style: none;
+    font-size: 14px;
+    padding: 1.3rem 0rem;
+}
+.Prezzi li h2 {
+    font-size: 24px;
+    background: #FFFFFF;
+}
+.Prezzi li span {
+    color: #938463;
+    font-size: 14px;
+    padding-top: 0.8rem;
+    display: inline;
+}
+.Prezzi li p {
+    color: #949494;
+    font-size: 14px;
+    padding: 0.8rem 0rem 0rem;
+}
 
 
 /* VitalijS */
-
 aside{
     background-image: url(../images/subscribe-bg.jpg);
     background-size: cover;
