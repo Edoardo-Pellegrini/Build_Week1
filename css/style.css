@@ -23,10 +23,8 @@ header {
  
 }
 
-/* .header{
-    position:sticky;
-    
-} */
+ 
+
 
 .immagine_zuppa img {
     width: 100%;
@@ -218,19 +216,31 @@ aside{
     text-align: center;
     height: 35em;
     color: white;
+    padding: -1em;
+    margin-bottom: 6em;
     
 }
 aside > div{
 position: relative;
 top: 25%;
 }
-aside div p:nth-child(2){
-margin: auto 2em;
+aside p:first-child{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+aside p:first-child span{
+   
+    font-size: 0.8em;
+}
+
+aside p:last-child {
+margin-top:3em;
 }
 aside input{
     height: 5em;  
     width: 90%;
     margin-top: 3em;
+    border: 0;
 }
 aside button{
     background-color: #7EC3BB;
@@ -240,7 +250,18 @@ aside button{
     width: 45%;
     display:block;
     margin-top: 2em;
-    
-   
+    font-weight: bold;
 }
+form input, form textarea{
+    display: flex;
+    width: 90%;
+    margin: 1em auto;
+    height: 3em;
+}
+.contattaci p:first-child span{
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
 
