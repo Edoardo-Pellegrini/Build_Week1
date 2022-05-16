@@ -71,7 +71,7 @@ color: grey;
 .blog_container img{
     width: 100%;
 }
-/*  .blog_img1{
+ .blog_img1{
     
     margin: 1rem 0.8rem;
     text-align: center;
@@ -89,7 +89,7 @@ color: grey;
     margin: 0 0;
     box-sizing: border-box;
 }
- */
+
 
 
 
@@ -108,3 +108,37 @@ color: grey;
 
 
 /* VitalijS */
+
+aside{
+    background-image: url(../images/subscribe-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 35em;
+    color: white;
+    
+}
+aside > div{
+position: relative;
+top: 25%;
+}
+aside div p:nth-child(2){
+margin: auto 2em;
+}
+aside input{
+    height: 5em;  
+    width: 90%;
+    margin top: 3em;
+}
+aside button{
+    background-color: #7EC3BB;
+    border: 0;
+    height: 5em;
+    color: white;
+    width: 45%;
+    display:block;
+    margin-top: 2em;
+    
+   
+}
+
