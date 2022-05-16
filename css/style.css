@@ -1,4 +1,44 @@
 /* Edoardo, Francesca */
+body{
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    width: 100%;
+
+
+}
+
+
+span{
+    color: #ff530a;
+}
+header {
+    display: flex;
+    width: 85%;
+   /*  margin-top: -85px; */
+    position:sticky;
+    top:-85px;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.76);
+    z-index: 3;
+    margin: 0 auto;
+    margin-top: -85px;
+ 
+}
+
+/* .header{
+    position:sticky;
+    
+} */
+
+.immagine_zuppa img {
+    width: 100%;
+    z-index: 1;
+    /* position: relative; */
+}
+
+
+
 
 
 
@@ -109,12 +149,113 @@ color: grey;
 
 
 /* Claudia */
+#Menu {
+    color: #333333;
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.5;
+}
+#Menu h1 {
+    color: #2E2E2E;
+    /* padding: 40px 0px; */
+}
+span {
+    color: #FF530A;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+#Menu p {
+    color: #9D9D9D;
+    font-size: 16px;
+    /* padding: 40px 0px 0px; */
+}
 
+#Menu hr {
+    width: 30%;
+}
 
+.Prezzi a {
+    color: #FF4F02;
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    /* padding: 28px 100px; */
+    border: 1px solid #FF4F02;
+    float: right;
+    width: 70%;
+    cursor: pointer;
+}
+.Prezzi {
+    /* padding: 85px 0px 0px 0px; */
+    text-align: left;
+}
+.Prezzi .Titolo {
+    font-size: 14px;
+    /* padding: 30px 0px; */
+}
 
-
-
-
+.Titolo h3 {
+    font-size: 20px;
+}
+.Titolo h3 span {
+    font-size: 20px;
+}
+.Prezzi li {
+    list-style: none;
+    font-size: 14px;
+    /* padding: 21px 0px; */
+}
+.Prezzi li h2 {
+    font-size: 24px;
+    background: #FFFFFF;
+}
+.Prezzi li span {
+    color: #938463;
+    font-size: 14px;
+    /* padding: 10px 0px 0px; */
+    display: inline;
+}
+.Prezzi li p {
+    color: #949494;
+    font-size: 14px;
+    /* padding: 12px 0px 0px; */
+}
 
 
 /* VitalijS */
+
+aside{
+    background-image: url(../images/subscribe-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 35em;
+    color: white;
+    
+}
+aside > div{
+position: relative;
+top: 25%;
+}
+aside div p:nth-child(2){
+margin: auto 2em;
+}
+aside input{
+    height: 5em;  
+    width: 90%;
+    margin-top: 3em;
+}
+aside button{
+    background-color: #7EC3BB;
+    border: 0;
+    height: 5em;
+    color: white;
+    width: 45%;
+    display:block;
+    margin-top: 2em;
+    
+   
+}
+
