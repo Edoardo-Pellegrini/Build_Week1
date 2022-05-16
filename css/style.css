@@ -10,6 +10,86 @@
 
 /* Simone */
 
+                    /* Blocco Grigio */
+.grey_block{
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+.grey_block img{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.title_grey{
+    margin: 0 1rem;
+}
+.orange_text{
+    font-weight: bold;
+    color: #ff530a;
+
+}
+hr{
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem; 
+}
+.text_grey{
+    line-height: 2rem;
+    padding: 2rem;
+}
+.text_grey p{
+color: grey;
+/* margin: 0 1rem 1rem 1rem; */
+}
+                /* Blocco Info Menu */
+.blog_food{
+    width: 100%;
+   
+    background-image: url(/images/blog/blog-bg.jpg) ;
+    background-size: cover;
+    background-attachment:fixed ;
+    /* opacity: 80%; */
+}
+
+.title_blog{
+    text-align: center;
+    margin: 0 0;
+    padding: 4rem 2rem 0.5rem 2rem; 
+}
+.blog_info h1{
+    margin: 2rem;
+}
+
+.blog_container{
+    text-align: center;
+    margin: 1rem 0.8rem;
+    background-color: white;
+}
+.blog_container img{
+    width: 100%;
+}
+/*  .blog_img1{
+    
+    margin: 1rem 0.8rem;
+    text-align: center;
+} 
+.blog_img1{
+    background-color: white;
+}
+.blog_img1 img{
+     width: 100%; 
+     margin: 0 0;
+}
+.blog_img1 div{
+    background-color: white;
+    padding: 1rem;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+ */
 
 
 
