@@ -9,6 +9,7 @@ body {
     font-size: 100%;
     margin: 0 auto;
     font-family: "Myfont";
+    width: 100%;
 }
 
 .lni-menu {
@@ -21,9 +22,15 @@ h3 span {
     font-size: 1.2rem;
 }
 
-h3 {
+h3,
+.displayflex i {
     font-size: 1.2rem;
     padding: 1rem;
+}
+
+.displayflex i{
+    font-size: 2rem;
+   color: rgba(154, 154, 154, 0.76);
 }
 
 span {
@@ -35,7 +42,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 88%;
+    width: 90%;
     position: sticky;
     top: 0px;
     padding: 1.5rem 0.8rem 0 0.8rem;
@@ -121,6 +128,7 @@ input#menu_btn:checked~nav {
 .img_carosello {
     width: 92%;
     margin: auto;
+    
 
 }
 
@@ -136,6 +144,11 @@ input#menu_btn:checked~nav {
 
 }
 
+.carosello div img {
+     width: 22rem;
+    height: 150px;
+}
+
 .pallini {
     width: 20%;
     overflow: hidden;
@@ -143,19 +156,31 @@ input#menu_btn:checked~nav {
     margin: 3rem auto;
 }
 
-.pallini button {
-    width: 3px;
-    height: 10px;
+.pallini button{
+    height: 13px;
+    color: #c53416;
+    background-color: #FF4F02;
     border: none;
     background-color: lightgray;
     border-radius: 50%;
+
+
+}
+
+.displayflex{
+    display: flex;
+    justify-content:space-between
     
 }
 
+#prova1 {
+    transition: width 1s ease-in;
+}
+#prova1:hover {
+    width: 0;
+}
 
-/* .carosello div img {
-    width: 100%;
-} */
+
 
 @media screen and (max-width:768px) {
     header nav {
@@ -525,8 +550,8 @@ span {
 }
 
 
-/* VitalijS */
-aside {
+/* Vitalij */
+aside{
     background-image: url(../images/subscribe-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -614,7 +639,14 @@ form textarea {
 }
 
 /* footer */
-footer span {
+footer i, footer div:nth-last-child(2) a{
+   color: #B0B0B0;
+   
+}
+footer div:not(div:last-child){
+    padding: 0 0.9rem 0 0.9rem;
+}
+footer span{
     font-size: 1em;
     font-weight: bold;
 }
@@ -649,14 +681,14 @@ footer>div:last-child {
     height: 5em;
     text-align: center;
     margin-bottom: 0;
+   
 }
-
-footer>div:nth-last-child(1) p {
-
+footer > div:nth-last-child(1) p{
     line-height: 1.5em;
     font-size: 0.82em;
-    padding: 2em 2em;
+    padding: 1.2em 2.2em 0 2.2em;
     font-weight: 500;
+    font-size: 0.9em;
 }
 
 footer div {

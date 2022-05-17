@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant One Page HTML5 Template</title>
     <link rel="stylesheet" href="css/Reset.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body class="nuovofont">
@@ -21,33 +19,32 @@
     </div>
 
     <header>
-
+       
         <figure>
             <img src="images/logo.png" alt="Logo">
         </figure>
-
-        <label for="menu_btn" id="menu_mobile"><i class="lni lni-menu"></i></label>
-        <input type="checkbox" id="menu_btn">
-
         <nav id="Menu_a_tendina">
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Menù</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Blog</li>
+                <li>Menu</li>
+                <li>News</li>
+                <li>Contacts</li>
             </ul>
         </nav>
-
-
-
+        <i class="fa-regular fa-bars" onclick="Menu_a_tendina()"></i>
+        
     </header>
 
     <section class="img_carosello">
-        <h3>FEATURED <span>WORKS</span></h3>
+        <div class="displayflex">
+            <h3>FEATURED <span>WORKS</span></h3>
+            <i class="fa fa-angle-right" id="arrow" onclick="arrow()"></i>
+        </div>
         <div class="carosello">
-            <div>
+            <div id="prova1">
                 <img src="images/slider/slider-img-1.jpg" alt="foto pietanze1">
             </div>
             <div>
@@ -64,7 +61,8 @@
 
     </section>
     <div class="pallini">
-        <button></button>
+    
+        <button id="btn_slide" onclick="slide('#000')"></button>
         <button></button>
         <button></button>
         <button></button>
@@ -97,11 +95,11 @@
         
          
         <div class="blog_food">
-         <!-- scuro --> 
-         <div class="scuro"> 
-         <!-- scuro -->
+         <!-- aiuto --> 
+         <!-- <div class="nero"> -->
+         <!-- aiuto fine -->
              <div class="title_blog">
-            <h2>Latest <span>From </span>The <span>Blog</span></h2>
+            <h2>Latest <span class="orange_text">From </span>The <span class="orange_text">Blog</span></h2>
             </div> 
     
             <hr>
@@ -143,21 +141,19 @@
                             </p>
                             
                     </div>
-
-                    <div class="blog_img">
+            <div class="blog_img">
                 
-                        <img src="images/blog/blog-img-3.jpg" alt="blog-img-3">
-                    </div>
-                        <div class="text">
-                                <h3>Homestyle Chicken Pot Pie</h3>
-                                <hr>
-                                <div class="freccia_dx"></div>
-                                <p>Prepared in true New England fash-ion. Tender all-white
-                                    meat chicken simmered...
-                                </p>
-                                
-                            </div>
-                    
+                    <img src="images/blog/blog-img-3.jpg" alt="blog-img-3">
+                </div>
+                    <div class="text">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <div class="freccia_dx"></div>
+                            <p>Prepared in true New England fash-ion. Tender all-white
+                                meat chicken simmered...
+                            </p>
+                            
+                        </div>
                    
 
             <div class="blog_img">
@@ -187,31 +183,28 @@
                         </p>
                         
                     </div> 
-                
-     </div> 
-    
-    <div class="more_info">
-        <a href="#"><input type="button" value="MORE INFO"></a>
+            
+        <!-- </div> --> 
     </div>
- 
-        
-          
+    <div class="more_info">
+        <input type="button" value="MORE INFO">
+    </div>  
+        </div>
+            
                 
-        </div>
-        </div>
         
+        </div>
+       
         </section>
 
 
 
         <!-- Claudia -->
         <section class="Menu">
-            <button onclick="domanda()">PREMIMIIIII</button>
             <h1>our <span>MENU</span> the <span>PRICE</span></h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation allumco.</p>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation allumco.</p>
+            
             <div class="Prezzi">
                 <div class="Titolo">
                     <h3>FEATURED <span>ON THE WEEK</span></h3>
@@ -219,47 +212,37 @@
 
                 <ul>
                     <li>
-                        <div>
-                            <div>
-                                <h2>Pancakes n' Such</h2>
-                                <div class="trattini"></div>
-                                <span>$ 25.00</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim&&</p>
-                        </div>
+                        <h2>Pancakes n' Such</h2>
+                        <span>$ 25.00</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
                     <li>
                         <h2>Homestyle Chicken Pot Pie</h2>
-                        <div class="trattini"></div>
                         <span>$ 10.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
                     <li>
                         <h2>Cereal, Panecillos y Frutas</h2>
-                        <div class="trattini"></div>
                         <span>$ 5.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
                     <li>
                         <h2>Meat of Skewers</h2>
-                        <div class="trattini"></div>
                         <span>$ 15.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
                     <li>
                         <h2>Steak with a Garlic and Parsley Risotto</h2>
-                        <div class="trattini"></div>
                         <span>$ 75.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
                     <li>
                         <h2>Caesar Salad</h2>
-                        <div class="trattini"></div>
                         <span>$ 7.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim&&</p>
@@ -276,10 +259,9 @@
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 <div>
-                    <input type="email" name="emailnewsletter" id="emailnewsletter"
-                        placeholder="Enter your email to subscribe...">
+                    <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Enter your email to subscribe...">
                     <button>SUBSCRIBE</button>
-                </div>
+                </div>                
             </div>
         </aside>
         <section class="contattaci">
