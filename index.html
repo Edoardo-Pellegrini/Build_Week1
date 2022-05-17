@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant One Page HTML5 Template</title>
     <link rel="stylesheet" href="css/Reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="nuovofont">
@@ -19,26 +21,55 @@
     </div>
 
     <header>
-       
+
         <figure>
             <img src="images/logo.png" alt="Logo">
         </figure>
+
+        <label for="menu_btn" id="menu_mobile"><i class="lni lni-menu"></i></label>
+        <input type="checkbox" id="menu_btn">
+
         <nav id="Menu_a_tendina">
 
             <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Blog</li>
-                <li>Menu</li>
-                <li>News</li>
-                <li>Contacts</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Menù</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
-        <i class="fa-regular fa-bars" onclick="Menu_a_tendina()"></i>
-        
+
+
+
     </header>
 
- 
+    <section class="img_carosello">
+        <h3>FEATURED <span>WORKS</span></h3>
+        <div class="carosello">
+            <div>
+                <img src="images/slider/slider-img-1.jpg" alt="foto pietanze1">
+            </div>
+            <div>
+                <img src="images/slider/slider-img-2.jpg" alt="foto pietanze2">
+            </div>
+            <div>
+                <img src="images/slider/slider-img-3.jpg" alt="foto pietanze3">
+
+            </div>
+            <div>
+                <img src="images/slider/slider-img-4.jpg" alt="foto pietanze4">
+            </div>
+        </div>
+
+    </section>
+    <div class="pallini">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
     <main>
         <!-- Simone -->
         <section>
@@ -66,14 +97,15 @@
         
          
         <div class="blog_food">
-         <!-- aiuto --> 
-         <!-- <div class="nero"> -->
-         <!-- aiuto fine -->
+         <!-- scuro --> 
+         <div class="scuro"> 
+         <!-- scuro -->
              <div class="title_blog">
             <h2>Latest <span class="orange_text">From </span>The <span class="orange_text">Blog</span></h2>
             </div> 
     
             <hr>
+
             <div class="blog_container">
             
                 
@@ -82,10 +114,11 @@
                     </div>    
                     <div class="text">
                             <h3>Homestyle Chicken Pot Pie</h3>
-                        <hr>
+                            <div class="freccia_sx"></div><hr>
                             <p>Prepared in true New England fash-ion. Tender all-white
                                 meat chicken simmered...
                             </p>
+                            
                     </div>    
             <!-- </div> -->
             <div class="blog_img">
@@ -93,30 +126,26 @@
                     </div>
                     <div class="text">
                             <h3>Homestyle Chicken Pot Pie</h3>
-                        <hr>
+                            <div class="freccia_sx"></div><hr>
+                        <!-- <div class="freccia_sx"></div> -->
                             <p>Prepared in true New England fash-ion. Tender all-white
                             meat chicken simmered...</p>
+                            
                     </div>  
             
                     
                     <div  class="text">
                             <h3>Homestyle Chicken Pot Pie</h3>
                             <hr>
+                            <div class="freccia_dx"></div>
                             <p>Prepared in true New England fash-ion. Tender all-white
                                 meat chicken simmered...
                             </p>
+                            
                     </div>
-            <div class="blog_img">
-                
-                    <img src="images/blog/blog-img-3.jpg" alt="blog-img-3">
-                </div>
-                    <div class="text">
-                            <h3>Homestyle Chicken Pot Pie</h3>
-                            <hr>
-                            <p>Prepared in true New England fash-ion. Tender all-white
-                                meat chicken simmered...
-                            </p>
-                        </div>
+
+
+                    
                    
 
             <div class="blog_img">
@@ -129,44 +158,48 @@
 
             <div class="text">
                     <h3>Homestyle Chicken Pot Pie</h3>
-                    <hr>
+                    <div class="freccia_sx"></div><hr>
                     <p>Prepared in true New England fash-ion. Tender all-white
                         meat chicken simmered...
                     </p>
-        
+                    
             </div>
             <div class="blog_img">
                         <img src="images/blog/blog-img-6.jpg" alt="blog-img-6">  
             </div>            
                     <div class="text">
                         <h3>Homestyle Chicken Pot Pie</h3>
-                        <hr>
+                        <div class="freccia_sx"></div><hr>
                         <p>Prepared in true New England fash-ion. Tender all-white
                             meat chicken simmered...
                         </p>
+                        
                     </div> 
-            
-        <!-- </div> --> 
-    </div>
+                
+     </div> 
+    
     <div class="more_info">
         <input type="button" value="MORE INFO">
-    </div>  
-        </div>
-            
-                
+    </div>
+ 
         
+          
+                
         </div>
-       
+        </div>
+        
         </section>
 
 
 
         <!-- Claudia -->
         <section class="Menu">
+            <button onclick="domanda()">PREMIMIIIII</button>
             <h1>our <span>MENU</span> the <span>PRICE</span></h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation allumco.</p>
-            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation allumco.</p>
+
             <div class="Prezzi">
                 <div class="Titolo">
                     <h3>FEATURED <span>ON THE WEEK</span></h3>
@@ -231,42 +264,42 @@
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 <div>
-                    <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Enter your email to subscribe...">
+                    <input type="email" name="emailnewsletter" id="emailnewsletter"
+                        placeholder="Enter your email to subscribe...">
                     <button>SUBSCRIBE</button>
-                </div>                
+                </div>
             </div>
         </aside>
         <section class="contattaci">
-            <p>our<span>CONTACT US</span></p>
+            <p>our<span> CONTACT US</span></p>
             <hr>
             <form action="">
                 <p>SIGN UP FOR<span> EMAIL ALERTS</span></p>
                 <input type="text" name="" id="" placeholder="Write your full name here...">
                 <input type="email" name="" id="" placeholder="Write your email address here...">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-                <button>SEND YOUR MESSAGE</button>
             </form>
+            <button>SEND YOUR MESSAGE</button>
         </section>
 
     </main>
 
     <footer>
-        <section>
+        <div>
             <p>CONTACT<span>INFO</span></p>
-            <p>Telefone</p>
             <div class="info">
                 <ul>
                     <li>
-                        <p><i class="fa fa-phone"></i>Telefone</p>
+                        <p><i class="fa-solid fa-phone"></i>Telefone</p>
                         <p>(000) 123 456 78- (000) 123 4567 89</p>
 
                     </li>
                     <li>
-                        <p><i class="fa fa-map-marker"></i>Address</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Address</p>
                         <address>2046 Blue Spruce Lane Laurel Canada</address>
                     </li>
                     <li>
-                        <p><i class="fa fa-envelope"></i>E mail</p>
+                        <p><i class="fa-solid fa-envelope"></i>E mail</p>
                         <p>rest@gmail.com - rest@mail.ru</p>
                     </li>
                 </ul>
@@ -284,41 +317,41 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
+            <p>PHOTO <span>STREAM</span></p>
             <img src="images/photo/photo-1.jpg" alt="dolci">
             <img src="images/photo/photo-2.jpg" alt="panino">
             <img src="images/photo/photo-3.jpg" alt="verdura">
             <img src="images/photo/photo-4.jpg" alt="ravioli">
 
-        </section>
-        <section>
-            <p>Follow<span>US</span></p>
+        </div>
+        <div>
+            <p>Follow<span> US</span></p>
             <ul>
                 <li>
                     <a href="#">
-                        <i class="fa fa-twitter"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-dribbble-square"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-dribbble"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-behance"></i>
+                        <i class="fa-brands fa-behance-square"></i>
                     </a>
                 </li>
             </ul>
-        </section>
+        </div>
         <div>
-            <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <a
+            <p>Copyright &copy; 2014  -  All Rights Reserved.Design and Developed By <a
                     href="http://www.themefisher.com">Themefisher</a></p>
         </div>
     </footer>
