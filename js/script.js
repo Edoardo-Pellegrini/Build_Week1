@@ -17,3 +17,11 @@ function domanda() {
         
     }
 }
+
+function slide(color){    // Work in progress
+    document.getElementById('btn_slide').backgroud = color;
+    
+}
+function arrow() {
+    
+}
