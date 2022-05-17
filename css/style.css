@@ -3,47 +3,175 @@
     font-family: "Myfont";
     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
 }
-.nuovofont{
+
+
+body {
+    font-size: 100%;
+    margin: 0 auto;
     font-family: "Myfont";
 }
 
-body{
-    font-size: 100%;
-    margin: 0 auto;
+.lni-menu {
+    color: #e94c3d;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+h3 span {
+    font-size: 1.2rem;
+}
 
-span{
+h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+span {
     color: #ff530a;
+
 }
+
 header {
     display: flex;
-    width: 85%;
-   /*  margin-top: -85px; */
-    position:sticky;
-    top:-85px;
-    padding: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 88%;
+    position: sticky;
+    top: 0px;
+    padding: 1.5rem 0.8rem 0 0.8rem;
     background-color: rgba(255, 255, 255, 0.76);
     z-index: 3;
     margin: 0 auto;
-    margin-top: -85px;
- 
+    margin-top: -79px;
+
 }
 
- 
+label {
+    flex-basis: 5%;
+}
 
+header figure {
+    flex-basis: 95%;
+
+}
+
+#Menu_a_tendina {
+    z-index: 3;
+
+}
 
 .immagine_zuppa img {
     width: 100%;
     z-index: 1;
-    /* position: relative; */
+}
+
+header nav {
+    margin-top: 2.5rem;
+    position: relative;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #2E2E2E;
+    text-transform: uppercase;
+
+}
+
+header nav ul li {
+    padding: 0.5rem;
 }
 
 
+input#menu_btn {
+    display: none;
+}
+
+input#menu_btn:checked~nav {
+    height: 210px;
+}
+
+
+
+#Menu_a_tendina ul li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #ff5333;
+    padding-bottom: 0.5rem;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+
+
+#Menu_a_tendina ul li:hover:after {
+    transform: scaleX(1);
+}
+
+
+#Menu_a_tendina ul li:after {
+    transform-origin: 0 50%;
+}
+
+
+#Menu_a_tendina ul li:active {
+    border-bottom: solid 2px #ff5333;
+}
+
+.img_carosello {
+    width: 92%;
+    margin: auto;
+
+}
+
+.carosello {
+    display: flex;
+    height: 180px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carosello div {
+    width: 50%;
+
+}
+
+.pallini {
+    width: 20%;
+    overflow: hidden;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.pallini button {
+    width: 3px;
+    height: 10px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 50%;
+    
+}
+
+
+/* .carosello div img {
+    width: 100%;
+} */
+
+@media screen and (max-width:768px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+    }
+
+}
+
 /* Simone */
 
-                    /* Blocco Grigio */
-.grey_block{
+/* Blocco Grigio */
+.grey_block {
     width: 100%;
     height: auto;
     background-color: rgb(241, 241, 241);
@@ -60,7 +188,7 @@ header {
     margin-bottom: 2rem;
 }
 
-.title_grey{
+.title_grey {
     margin: 0 1rem;
 }
 .blog_food span{
@@ -69,20 +197,24 @@ header {
     color: #ff530a;
 
 }
-hr{
+
+hr {
     width: 10rem;
     margin-top: 2rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
-.text_grey{
+
+.text_grey {
     line-height: 2rem;
     padding: 2rem;
 }
-.text_grey p{
-color: grey;
+
+.text_grey p {
+    color: grey;
 
 }
-                                            /* Blocco Info Menu */
+
+/* Blocco Info Menu */
 .blog_food {
     width: 100%;
    height: 100%;
@@ -105,43 +237,49 @@ color: grey;
 .title_blog{
     text-align: center;
     margin: 0 0;
-    padding: 4rem 2rem 0.5rem 2rem; 
+    padding: 4rem 2rem 0.5rem 2rem;
 }
 
 
-.blog_container{
+.blog_container {
     height: auto;
     text-align: center;
     margin: 1rem 1rem 4rem 1rem;
     background-color: white;
 }
-.blog_img{
+
+.blog_img {
     overflow: hidden;
 }
-.blog_container img{
+
+.blog_container img {
     width: 100%;
-    
-   
-    transition: 1s; 
+
+
+    transition: 1s;
 }
-.blog_container img:hover{
+
+.blog_container img:hover {
     transform: scale(1.2) rotate(10deg);
-      
-    
+
+
 }
-.more_info{
+
+.more_info {
     text-align: left;
     padding: 0 0.8rem;
 }
-.text{
+
+.text {
     padding: 1.5rem 1.5rem;
 }
-.more_info input{
+
+.more_info input {
     padding: 2rem 4rem;
     background-color: #ff530a;
     color: white;
     border: none;
-    transition-property: background-color ;
+    transition-property: background-color;
     transition-duration: 1s;
     margin-bottom: 5rem;
 }
@@ -153,9 +291,9 @@ color: grey;
 }
 
 
-@media screen and (min-width: 768px ) {
-    .blog_container{
-        position: relative; 
+@media screen and (min-width: 768px) {
+    .blog_container {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         width: 80%;
@@ -230,15 +368,73 @@ color: grey;
          position: relative;   
     }
 
-    .text{
-        /* position: relative; */
-         width: 25%; 
-         height: auto;
+    .text {
+        position: relative;
+        width: 50%;
+        height: auto;
         background-color: white;
         box-sizing: border-box;
         padding: 1.5rem 1.5rem 1rem 1.5;
     }
-    .freccia_sx, .freccia_dx{
+
+    .freccia_sx,
+    .freccia_dx {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        transform: rotate(45deg);
+        background-color: white;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    .freccia_sx {
+        top: 50px;
+        left: -25px;
+    }
+
+    .freccia_dx {
+        top: 50px;
+        right: -25px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .blog_container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: initial;
+
+    }
+
+    .blog_container hr {
+        width: 40%;
+        display: inline-block;
+        margin: 1em auto;
+    }
+
+    .blog_img {
+        width: 25%;
+        height: auto;
+        background-color: white;
+        position: relative;
+    }
+
+    .text {
+        /* position: relative; */
+        width: 25%;
+        height: auto;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 1.5rem 1.5rem 1rem 1.5;
+    }
+
+    .freccia_sx,
+    .freccia_dx {
         /*  border: 1px solid black;  */
         position: absolute;
 
@@ -246,7 +442,7 @@ color: grey;
         height: 3rem;
         transform: rotate(45deg);
         background-color: white;
-        display: inline-block; 
+        display: inline-block;
         z-index: 2;
      }
      .more_info{
@@ -271,16 +467,19 @@ color: grey;
     line-height: 1.5;
     padding: 4.5rem 0.9rem 9rem 0.9rem;
 }
+
 .Menu h1 {
     color: #2E2E2E;
     padding: 2.5rem 0rem 0rem 0rem;
 }
+
 span {
     color: #FF530A;
     font-size: 1.7rem;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .Menu p {
     color: #9D9D9D;
     font-size: 1rem;
@@ -299,6 +498,7 @@ span {
     cursor: pointer;
     font-weight: bold;
 }
+
 .Prezzi a:hover {
     color: white;
     background-color: #FF4F02;
@@ -308,6 +508,7 @@ span {
     padding: 5rem 0rem 0rem 0rem;
     text-align: left;
 }
+
 .Prezzi .Titolo {
     font-size: 0.8rem;
 }
@@ -317,18 +518,22 @@ span {
     font-weight: bold;
     padding: 1.6rem 0rem;
 }
+
 .Titolo h3 span {
     font-size: 1rem;
 }
+
 .Prezzi li {
     list-style: none;
     font-size: 0.8rem;
     padding: 1.3rem 0rem;
 }
+
 .Prezzi li h2 {
     font-size: 1.5rem;
     background: #FFFFFF;
 }
+
 .Prezzi li span {
     color: #938463;
     font-size: 0.9rem;
@@ -336,6 +541,7 @@ span {
     display: inline;
     font-weight: lighter;
 }
+
 .Prezzi li p {
     color: #949494;
     font-size: 0.9rem;
@@ -344,7 +550,7 @@ span {
 
 
 /* VitalijS */
-aside{
+aside {
     background-image: url(../images/subscribe-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -353,53 +559,62 @@ aside{
     color: white;
     padding: -1em;
     margin-bottom: 6em;
-    
+
 }
-aside > div{
-position: relative;
-top: 25%;
+
+aside>div {
+    position: relative;
+    top: 25%;
 }
-aside p:first-child{
+
+aside p:first-child {
     font-size: 1.5em;
     font-weight: bold;
 }
-aside p:first-child span{
-   
+
+aside p:first-child span {
+
     font-size: 0.8em;
 }
 
 aside p:last-child {
-margin-top:3em;
+    margin-top: 3em;
 }
-aside input{
-    height: 5em;  
+
+aside input {
+    height: 5em;
     width: 90%;
     margin-top: 3em;
     border: 0;
 }
-aside button{
+
+aside button {
     background-color: #7EC3BB;
     border: 0;
     height: 5em;
     color: white;
     width: 45%;
-    display:block;
+    display: block;
     margin-top: 2em;
     font-weight: bold;
     margin-left: 1.5em;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     display: flex;
     width: 90%;
     margin: 1em auto;
     height: 3em;
     padding-left: 1em;
 }
-form textarea{
+
+form textarea {
     height: 10em;
     padding-top: 1em;
 }
-.contattaci button{   
+
+.contattaci button {
     background-color: #ff530a;
     color: white;
     border: none;
@@ -411,56 +626,68 @@ form textarea{
     width: 95%;
 
 }
-.contattaci > p{
+
+.contattaci>p {
     text-align: center;
     font-size: 1.3em;
 }
-.contattaci p span{
+
+.contattaci p span {
     font-size: 1em;
     font-weight: bold;
 }
+
 /* footer */
-footer span{
+footer span {
     font-size: 1em;
     font-weight: bold;
 }
-footer a{
+
+footer a {
     text-decoration: none;
-    color:#FF4F02;
+    color: #FF4F02;
     font-weight: bold;
 }
-footer li{
+
+footer li {
     margin-bottom: 1.5em;
 }
-footer div:first-child div ul li{
+
+footer div:first-child div ul li {
     margin-bottom: 1em;
 }
-footer div:first-child  ul li p:first-child{
-    color:#FF4F02 ;
+
+footer div:first-child ul li p:first-child {
+    color: #FF4F02;
 }
-footer > div:nth-child(3) ul li{
+
+footer>div:nth-child(3) ul li {
     display: inline-block;
     font-size: 2.5em;
-    margin-top:0.4em ;
+    margin-top: 0.4em;
     margin-right: 0.6em;
 }
-footer > div:last-child{
+
+footer>div:last-child {
     background-color: #E9E9E9;
     height: 5em;
     text-align: center;
     margin-bottom: 0;
 }
-footer > div:nth-last-child(1) p{
-    
+
+footer>div:nth-last-child(1) p {
+
     line-height: 1.5em;
     font-size: 0.82em;
     padding: 2em 2em;
     font-weight: 500;
 }
-footer div{
+
+footer div {
     margin-bottom: 5em;
 }
-footer div img{
+
+footer div img {
     margin-right: 1em;
     margin-top: 2em;
 }
