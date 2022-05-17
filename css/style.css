@@ -74,7 +74,8 @@ color: grey;
     width: 100%;
    height: 100%;
     background-image: url(../images/blog/blog-bg.jpg) ;
-    background-size:auto;
+    background-size:cover;
+    background-repeat: no-repeat;
     background-position: left;
     background-attachment:fixed ;
     padding: 3rem 0 3.5rem 0;
@@ -132,6 +133,102 @@ color: grey;
     background-color: #c53416;
 }
 
+
+@media screen and (min-width: 768px ) {
+    .blog_container{
+        position: relative; 
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: initial;
+    }
+    .blog_img{
+        position: relative; 
+        width: 50%; 
+        height: auto;   
+        background-color: white; 
+          
+   }
+   .text{
+    position: relative; 
+     width: 50%; 
+     height: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1.5rem 1.5rem 1rem 1.5;
+}
+.freccia_sx, .freccia_dx{
+     position: absolute; 
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
+    background-color: white;
+    display: inline-block; 
+    z-index: 2;
+ }
+ .freccia_sx{
+    top: 50px;
+    left: -25px; 
+}
+.freccia_dx{ 
+    top: 50px;
+    right: -25px; 
+}
+
+}
+@media only screen and (min-width: 1200px){
+    .blog_container{
+        display: flex;
+       flex-wrap: wrap;
+        width: 70%;
+        justify-content: center; 
+        margin: 0 auto;
+        background-color:initial;
+        
+    }
+    .blog_container hr{
+        width: 40%;
+        display: inline-block;
+        margin: 1em auto;
+    }
+    .blog_img{
+         width: 25%; 
+         height: auto;   
+         background-color: white; 
+         position: relative;   
+    }
+
+    .text{
+        /* position: relative; */
+         width: 25%; 
+         height: auto;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 1.5rem 1.5rem 1rem 1.5;
+    }
+    .freccia_sx, .freccia_dx{
+        /*  border: 1px solid black;  */
+        position: absolute;
+
+        width: 3rem;
+        height: 3rem;
+        transform: rotate(45deg);
+        background-color: white;
+        display: inline-block; 
+        z-index: 2;
+     }
+    /*  .freccia_sx{
+        top:30px  ;
+        left:-25px ; 
+     }
+     .freccia_dx{
+        top: 30px;
+        left: ; 
+        
+    } */
+}
 
 /* Claudia */
 .Menu {
