@@ -1,5 +1,19 @@
+function domanda() {
 
-function Menu_a_tendina(id,height){
-    document.getElementById('menu_a_tendina').style.height = 300;
-    alert('fhuf')
+    
+    let risposta = prompt("Come è andata la visita?");
+    switch(risposta) {
+    case "bene":
+        alert("Ottimo son contento, era una scusa per non lavorare?");
+        break;
+    case "male":
+        alert("mi disp :(");
+        break;
+    case "insomma":
+        alert("Come mai che succ?");
+        break;
+    default:
+        alert("Era una scusa per non lavorare?");
+        
+    }
 }
