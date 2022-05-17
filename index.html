@@ -45,9 +45,12 @@
     </header>
 
     <section class="img_carosello">
-        <h3>FEATURED <span>WORKS</span></h3>
+        <div class="displayflex">
+            <h3>FEATURED <span>WORKS</span></h3>
+            <i class="fa fa-angle-right" id="arrow" onclick="arrow()"></i>
+        </div>
         <div class="carosello">
-            <div>
+            <div id="prova1">
                 <img src="images/slider/slider-img-1.jpg" alt="foto pietanze1">
             </div>
             <div>
@@ -64,7 +67,8 @@
 
     </section>
     <div class="pallini">
-        <button></button>
+    
+        <button id="btn_slide" onclick="slide('#000')"></button>
         <button></button>
         <button></button>
         <button></button>

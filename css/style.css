@@ -9,6 +9,7 @@ body {
     font-size: 100%;
     margin: 0 auto;
     font-family: "Myfont";
+    width: 100%;
 }
 
 .lni-menu {
@@ -21,9 +22,15 @@ h3 span {
     font-size: 1.2rem;
 }
 
-h3 {
+h3,
+.displayflex i {
     font-size: 1.2rem;
     padding: 1rem;
+}
+
+.displayflex i{
+    font-size: 2rem;
+   color: rgba(154, 154, 154, 0.76);
 }
 
 span {
@@ -35,7 +42,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 88%;
+    width: 90%;
     position: sticky;
     top: 0px;
     padding: 1.5rem 0.8rem 0 0.8rem;
@@ -121,6 +128,7 @@ input#menu_btn:checked~nav {
 .img_carosello {
     width: 92%;
     margin: auto;
+    
 
 }
 
@@ -136,6 +144,11 @@ input#menu_btn:checked~nav {
 
 }
 
+.carosello div img {
+     width: 22rem;
+    height: 150px;
+}
+
 .pallini {
     width: 20%;
     overflow: hidden;
@@ -143,19 +156,31 @@ input#menu_btn:checked~nav {
     margin: 3rem auto;
 }
 
-.pallini button {
-    width: 3px;
-    height: 10px;
+.pallini button{
+    height: 13px;
+    color: #c53416;
+    background-color: #FF4F02;
     border: none;
     background-color: lightgray;
     border-radius: 50%;
+
+
+}
+
+.displayflex{
+    display: flex;
+    justify-content:space-between
     
 }
 
+#prova1 {
+    transition: width 1s ease-in;
+}
+#prova1:hover {
+    width: 0;
+}
 
-/* .carosello div img {
-    width: 100%;
-} */
+
 
 @media screen and (max-width:768px) {
     header nav {
