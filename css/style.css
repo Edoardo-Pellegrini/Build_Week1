@@ -570,35 +570,28 @@ aside{
     color: white;
     padding: -1em;
     margin-bottom: 6em;
-
 }
-
 aside>div {
     position: relative;
     top: 25%;
 }
-
 aside p:first-child {
     font-size: 1.5em;
     font-weight: bold;
 }
-
 aside p:first-child span {
 
     font-size: 0.8em;
 }
-
 aside p:last-child {
     margin-top: 3em;
 }
-
 aside input {
     height: 5em;
     width: 90%;
     margin-top: 3em;
     border: 0;
 }
-
 aside button {
     background-color: #7EC3BB;
     border: 0;
@@ -610,8 +603,6 @@ aside button {
     font-weight: bold;
     margin-left: 1.5em;
 }
-
-form input,
 form textarea {
     display: flex;
     width: 90%;
@@ -619,12 +610,10 @@ form textarea {
     height: 3em;
     padding-left: 1em;
 }
-
 form textarea {
     height: 10em;
     padding-top: 1em;
 }
-
 .contattaci button {
     background-color: #ff530a;
     color: white;
@@ -637,21 +626,25 @@ form textarea {
     width: 95%;
 
 }
-
 .contattaci>p {
     text-align: center;
     font-size: 1.3em;
 }
-
 .contattaci p span {
     font-size: 1em;
     font-weight: bold;
 }
-
 /* footer */
+footer h3 {
+    padding: 0;
+    margin-bottom:2em ;
+}
+
+footer p{
+    color:#474747 ;
+}
 footer i, footer div:nth-last-child(2) a{
    color: #B0B0B0;
-   
 }
 footer div:not(div:last-child){
     padding: 0 0.9rem 0 0.9rem;
@@ -660,32 +653,27 @@ footer span{
     font-size: 1em;
     font-weight: bold;
 }
-
 footer a {
     text-decoration: none;
     color: #FF4F02;
     font-weight: bold;
 }
-
 footer li {
     margin-bottom: 1.5em;
-}
 
+}
 footer div:first-child div ul li {
     margin-bottom: 1em;
 }
-
 footer div:first-child ul li p:first-child {
     color: #FF4F02;
 }
-
 footer>div:nth-child(3) ul li {
     display: inline-block;
     font-size: 2.5em;
     margin-top: 0.4em;
     margin-right: 0.6em;
 }
-
 footer>div:last-child {
     background-color: #E9E9E9;
     height: 5em;
@@ -698,13 +686,13 @@ footer > div:nth-last-child(1) p{
     font-size: 0.82em;
     padding: 1.2em 2.2em 0 2.2em;
     font-weight: 500;
-    font-size: 0.9em;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    color: #454545;
 }
-
 footer div {
-    margin-bottom: 5em;
+    margin-bottom: 3.5em;
 }
-
 footer div img {
     margin-right: 1em;
     margin-top: 2em;
