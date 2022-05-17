@@ -49,7 +49,12 @@ header {
     background-color: rgb(241, 241, 241);
     text-align: center;
 }
-.grey_block img{
+.grey_block span{
+    text-transform: initial;
+    font-weight: bold;
+    color: #ff530a;
+}
+    .grey_block img{
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -58,7 +63,8 @@ header {
 .title_grey{
     margin: 0 1rem;
 }
-.orange_text{
+.blog_food span{
+    text-transform: initial;
     font-weight: bold;
     color: #ff530a;
 
@@ -81,11 +87,13 @@ color: grey;
     width: 100%;
    height: 100%;
     background-image: url(../images/blog/blog-bg.jpg) ;
+    background-color: rgba(0, 0, 0, 0.186);
+
     background-size:cover;
     background-repeat: no-repeat;
     background-position: left;
     background-attachment:fixed ;
-    padding: 3rem 0 3.5rem 0;
+    
 
 }
 
@@ -93,7 +101,7 @@ color: grey;
     background-color: rgba(0, 0, 0, 0.186);
     z-index: 1; 
     
-}  
+}   
 .title_blog{
     text-align: center;
     margin: 0 0;
@@ -135,10 +143,13 @@ color: grey;
     border: none;
     transition-property: background-color ;
     transition-duration: 1s;
+    margin-bottom: 5rem;
 }
 
 .more_info input:hover{
-    background-color: #c53416;
+    background-color: #ff530a00;
+        color: #ff530a;
+        border: 1px solid #ff530a;
 }
 
 
@@ -184,10 +195,21 @@ color: grey;
     top: 50px;
     right: -25px; 
 }
+.more_info{
+    text-align: center;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+.more_info input{
+    padding: 2rem 7rem;
+}
 
 }
 @media only screen and (min-width: 1200px){
     .blog_container{
+
+      /*   position: relative;
+ */
         display: flex;
        flex-wrap: wrap;
         width: 70%;
@@ -227,15 +249,17 @@ color: grey;
         display: inline-block; 
         z-index: 2;
      }
-    /*  .freccia_sx{
-        top:30px  ;
-        left:-25px ; 
-     }
-     .freccia_dx{
-        top: 30px;
-        left: ; 
+     .more_info{
+         width: 70%;
+        text-align: right;
+        padding: 0 3rem;
+        margin: 0 auto;
+    }
+    .more_info input{
+        padding: 2rem 7rem;
         
-    } */
+    }
+    
 }
 
 /* Claudia */
