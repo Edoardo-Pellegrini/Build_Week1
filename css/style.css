@@ -1,15 +1,14 @@
 /* Edoardo, Francesca */
-/* @font-face {
-    font-family: 'Myfont';
-    src: url('../fonts/ufonts.com_tw-cen-mt.ttf') format(truetype);
-    src: url('../fonts/fontawesome-webfont.ttf') format(truetype);
-} */
+@font-face {
+    font-family: "Myfont";
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
 
-body {
-    font-family: sans-serif;
+
+body{
     font-size: 100%;
     margin: 0 auto;
-    /*  font-family: 'Myfont'; */
+    font-family: "Myfont";
 }
 
 .lni-menu {
@@ -204,9 +203,10 @@ hr {
 /* Blocco Info Menu */
 .blog_food {
     width: 100%;
-    height: 100%;
-    background-image: url(../images/blog/blog-bg.jpg);
-    background-size: auto;
+   height: 100%;
+    background-image: url(../images/blog/blog-bg.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
     background-position: left;
     background-attachment: fixed;
     padding: 3rem 0 3.5rem 0;
@@ -271,14 +271,110 @@ hr {
 }
 
 
+@media screen and (min-width: 768px ) {
+    .blog_container{
+        position: relative; 
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: initial;
+    }
+    .blog_img{
+        position: relative; 
+        width: 50%; 
+        height: auto;   
+        background-color: white; 
+          
+   }
+   .text{
+    position: relative; 
+     width: 50%; 
+     height: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1.5rem 1.5rem 1rem 1.5;
+}
+.freccia_sx, .freccia_dx{
+     position: absolute; 
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
+    background-color: white;
+    display: inline-block; 
+    z-index: 2;
+ }
+ .freccia_sx{
+    top: 50px;
+    left: -25px; 
+}
+.freccia_dx{ 
+    top: 50px;
+    right: -25px; 
+}
+
+}
+@media only screen and (min-width: 1200px){
+    .blog_container{
+        display: flex;
+       flex-wrap: wrap;
+        width: 70%;
+        justify-content: center; 
+        margin: 0 auto;
+        background-color:initial;
+        
+    }
+    .blog_container hr{
+        width: 40%;
+        display: inline-block;
+        margin: 1em auto;
+    }
+    .blog_img{
+         width: 25%; 
+         height: auto;   
+         background-color: white; 
+         position: relative;   
+    }
+
+    .text{
+        /* position: relative; */
+         width: 25%; 
+         height: auto;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 1.5rem 1.5rem 1rem 1.5;
+    }
+    .freccia_sx, .freccia_dx{
+        /*  border: 1px solid black;  */
+        position: absolute;
+
+        width: 3rem;
+        height: 3rem;
+        transform: rotate(45deg);
+        background-color: white;
+        display: inline-block; 
+        z-index: 2;
+     }
+    /*  .freccia_sx{
+        top:30px  ;
+        left:-25px ; 
+     }
+     .freccia_dx{
+        top: 30px;
+        left: ; 
+        
+    } */
+}
+
 /* Claudia */
 .Menu {
     color: #333333;
     display: block;
     text-align: center;
-    font-size: 36px;
+    font-size: 1.4rem;
     line-height: 1.5;
-    padding: 4.5rem 0rem 9rem;
+    padding: 4.5rem 0.9rem 9rem 0.9rem;
 }
 
 .Menu h1 {
@@ -288,13 +384,14 @@ hr {
 
 span {
     color: #FF530A;
-    font-size: 45px;
+    font-size: 1.7rem;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .Menu p {
     color: #9D9D9D;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 1.5rem 0rem 0rem 0rem;
 }
 
@@ -302,14 +399,17 @@ span {
     color: #FF4F02;
     border-radius: 0;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: center;
     padding: 1.8rem 6.3rem;
     border: 1px solid #FF4F02;
     float: right;
-    /* width: 70%; */
     cursor: pointer;
     font-weight: bold;
+}
+.Prezzi a:hover {
+    color: white;
+    background-color: #FF4F02;
 }
 
 .Prezzi {
@@ -318,40 +418,41 @@ span {
 }
 
 .Prezzi .Titolo {
-    font-size: 14px;
-    /* padding: 30px 0px; */
+    font-size: 0.8rem;
 }
 
 .Titolo h3 {
-    font-size: 20px;
-    padding: 2rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.6rem 0rem;
 }
 
 .Titolo h3 span {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .Prezzi li {
     list-style: none;
-    font-size: 14px;
+    font-size: 0.8rem;
     padding: 1.3rem 0rem;
 }
 
 .Prezzi li h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     background: #FFFFFF;
 }
 
 .Prezzi li span {
     color: #938463;
-    font-size: 14px;
+    font-size: 0.9rem;
     padding-top: 0.8rem;
     display: inline;
+    font-weight: lighter;
 }
 
 .Prezzi li p {
     color: #949494;
-    font-size: 14px;
+    font-size: 0.9rem;
     padding: 0.8rem 0rem 0rem;
 }
 
@@ -404,6 +505,7 @@ aside button {
     display: block;
     margin-top: 2em;
     font-weight: bold;
+    margin-left: 1.5em;
 }
 
 form input,
@@ -412,10 +514,74 @@ form textarea {
     width: 90%;
     margin: 1em auto;
     height: 3em;
+    padding-left: 1em;
 }
+form textarea{
+    height: 10em;
+    padding-top: 1em;
+}
+.contattaci button{   
+    background-color: #ff530a;
+    color: white;
+    border: none;
+    height: 4em;
+    margin-bottom: 5em;
+    display: block;
+    margin-top: 2em;
+    margin: auto;
+    width: 95%;
 
-.contattaci p:first-child span {
-    font-size: 1.5em;
+}
+.contattaci > p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.contattaci p span{
+    font-size: 1em;
     font-weight: bold;
-
+}
+/* footer */
+footer span{
+    font-size: 1em;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color:#FF4F02;
+    font-weight: bold;
+}
+footer li{
+    margin-bottom: 1.5em;
+}
+footer div:first-child div ul li{
+    margin-bottom: 1em;
+}
+footer div:first-child  ul li p:first-child{
+    color:#FF4F02 ;
+}
+footer > div:nth-child(3) ul li{
+    display: inline-block;
+    font-size: 2.5em;
+    margin-top:0.4em ;
+    margin-right: 0.6em;
+}
+footer > div:last-child{
+    background-color: #E9E9E9;
+    height: 5em;
+    text-align: center;
+    margin-bottom: 0;
+}
+footer > div:nth-last-child(1) p{
+    
+    line-height: 1.5em;
+    font-size: 0.82em;
+    padding: 2em 2em;
+    font-weight: 500;
+}
+footer div{
+    margin-bottom: 5em;
+}
+footer div img{
+    margin-right: 1em;
+    margin-top: 2em;
 }
