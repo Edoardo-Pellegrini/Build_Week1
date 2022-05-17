@@ -251,18 +251,81 @@ aside button{
     display:block;
     margin-top: 2em;
     font-weight: bold;
+    margin-left: 1.5em;
 }
 form input, form textarea{
     display: flex;
     width: 90%;
     margin: 1em auto;
     height: 3em;
+    padding-left: 1em;
 }
-.contattaci p:first-child span{
-    font-size: 1.5em;
+form textarea{
+    height: 10em;
+    padding-top: 1em;
+}
+.contattaci button{   
+    background-color: #ff530a;
+    color: white;
+    border: none;
+    height: 4em;
+    margin-bottom: 5em;
+    display: block;
+    margin-top: 2em;
+    margin: auto;
+    width: 95%;
+
+}
+.contattaci > p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.contattaci p span{
+    font-size: 1em;
     font-weight: bold;
-
 }
-
-
-
+/* footer */
+footer span{
+    font-size: 1em;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color:#FF4F02;
+    font-weight: bold;
+}
+footer li{
+    margin-bottom: 1.5em;
+}
+footer div:first-child div ul li{
+    margin-bottom: 1em;
+}
+footer div:first-child  ul li p:first-child{
+    color:#FF4F02 ;
+}
+footer > div:nth-child(3) ul li{
+    display: inline-block;
+    font-size: 2.5em;
+    margin-top:0.4em ;
+    margin-right: 0.6em;
+}
+footer > div:last-child{
+    background-color: #E9E9E9;
+    height: 5em;
+    text-align: center;
+    margin-bottom: 0;
+}
+footer > div:nth-last-child(1) p{
+    
+    line-height: 1.5em;
+    font-size: 0.82em;
+    padding: 2em 2em;
+    font-weight: 500;
+}
+footer div{
+    margin-bottom: 5em;
+}
+footer div img{
+    margin-right: 1em;
+    margin-top: 2em;
+}
