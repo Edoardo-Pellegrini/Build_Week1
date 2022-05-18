@@ -1,3 +1,30 @@
+/*  */
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-weight: bold;
+}
+
+p{      /* p piccolo */
+    color: #949494;
+    line-height: 1.3rem;
+    font-size: 0.85rem;
+}
+
+.sub{   /* p grande */
+    line-height: 1.7rem;
+    font-size: 1rem;
+}
+/* Formattazione HR */
+.rigona{        /* hr grande */
+    width:8rem;
+}
+.rig{           /* hr piccola */
+    width:5rem;
+}
+    
+
 /* Edoardo, Francesca */
 @font-face {
     font-family: "Myfont";
@@ -249,13 +276,6 @@ header{
 
 }
 
-hr {
-    
-    width: 9rem;
-    margin-top: 2rem;
-    
-}
-
 .text_grey {
     line-height: 1.5rem;
     padding: 2rem;
@@ -269,9 +289,8 @@ hr {
 /* Blocco Info Menu */
 .blog_food {
     width: 100%;
-   height: 100%;
+    height: 100%;
     background-image: url(../images/blog/blog-bg.jpg) ;
-
     background-size:cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -284,6 +303,7 @@ hr {
     
 }    
 .title_blog{
+    color: white;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -291,9 +311,6 @@ hr {
 }
 .title_blog h2{
     font-size: 1.2rem;
-}
-.blog_food hr{
-    margin-bottom: 2rem;
 }
 
 .blog_container {
@@ -314,8 +331,6 @@ hr {
 
 .blog_container img:hover {
     transform: scale(1.2) rotate(10deg);
-
-
 }
 
 .more_info {
@@ -330,16 +345,8 @@ hr {
     font-weight: bold;
     padding: 0;   
 }
-.blog_container hr{
-    width: 25%;
-    margin: 1rem auto;
-}
-.blog_container p{
-    font-size: 0.8em;
-    color: #938463;
-}
-
 .more_info input {
+    font-family: "Myfont";
     padding: 2rem 4rem;
     background-color: #ff530a;
     color: white;
@@ -351,6 +358,7 @@ hr {
 
 .more_info input:hover{
     background-color: #ff530a00;
+    border-radius: 10px;
         color: #ff530a;
         border: 1px solid #ff530a;
 }
