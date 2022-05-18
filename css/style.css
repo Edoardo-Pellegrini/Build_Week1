@@ -11,7 +11,7 @@ body {
     font-family: "Myfont";
 }
 
-.lni-menu {
+.fa-bars {
     color: #e94c3d;
     font-size: 20px;
     font-weight: bold;
@@ -46,20 +46,16 @@ header {
 
 }
 
-label {
-    flex-basis: 5%;
-}
-
-header figure {
-    flex-basis: 95%;
-
-}
 
 #Menu_a_tendina {
     z-index: 3;
-
 }
 
+/* .overlay {
+    width: 300px;
+    height: 300px;
+    z-index: 70;
+} */
 .immagine_zuppa img {
     width: 100%;
     z-index: 1;
@@ -114,9 +110,7 @@ input#menu_btn:checked~nav {
 }
 
 
-#Menu_a_tendina ul li:active {
-    border-bottom: solid 2px #ff5333;
-}
+
 
 .img_carosello {
     width: 92%;
@@ -126,14 +120,24 @@ input#menu_btn:checked~nav {
 
 .carosello {
     display: flex;
-    height: 180px;
+    height: 200px;
     overflow: hidden;
     margin: auto;
 }
 
 .carosello div {
     width: 50%;
+    height: 100px;
 
+}
+
+.displayflex{
+    display: flex;
+    justify-content: space-between
+}
+
+.displayflex .fa-angle-right{
+    color: lightgray;
 }
 
 .pallini {
@@ -143,19 +147,40 @@ input#menu_btn:checked~nav {
     margin: 3rem auto;
 }
 
-.pallini button {
-    width: 3px;
-    height: 10px;
-    border: none;
+.pallini .fa-circle-small {
+
     background-color: lightgray;
-    border-radius: 50%;
+    
+    
+}
+
+.pallini a:active{
+    color:red;
+    
     
 }
 
 
-/* .carosello div img {
-    width: 100%;
+/*  .carosello #prova1 {
+    transition: width 1s ease-out;
+}
+
+.carosello #prova1:hover {
+    width: 0;
 } */
+
+/* @keyframes slider {
+    from{transform: translateX(0);}
+    
+    60% {transform: translateX(-100px);}
+    
+    to{transform: translateX(-200px);}
+}
+ */
+
+
+
+
 
 @media screen and (max-width:768px) {
     header nav {
@@ -166,6 +191,31 @@ input#menu_btn:checked~nav {
         transition: height 0.5s ease-out;
     }
 
+}
+
+@media screen and (min-width:768px){
+    #menu_mobile{
+        display:none;
+    }
+
+  
+header{
+    flex-wrap:nowrap;
+}
+    header nav {
+        overflow:visible;
+    }
+
+    #Menu_a_tendina ul{
+        display:flex;
+        
+        position:relative;
+        top:-40px;
+    }
+
+    #Menu_a_tendina ul li{
+        margin-left: 20px;
+    }
 }
 
 /* Simone */

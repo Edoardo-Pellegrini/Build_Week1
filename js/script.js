@@ -1,27 +1,19 @@
-function domanda() {
 
-    
-    let risposta = prompt("Come è andata la visita?");
-    switch(risposta) {
-    case "bene":
-        alert("Ottimo son contento, era una scusa per non lavorare?");
-        break;
-    case "male":
-        alert("mi disp :(");
-        break;
-    case "insomma":
-        alert("Come mai che succ?");
-        break;
-    default:
-        alert("Era una scusa per non lavorare?");
-        
-    }
-}
 
-function slide(color){    // Work in progress
-    document.getElementById('btn_slide').backgroud = color;
+/* function slide(color){    // Work in progress
+    document.getElementById('btn_slide').style =();
     
-}
+} */
+
+
 function arrow() {
+     
+    document.getElementById('prova1').style.transform = 'translateX(-10px)';
+   /*  document.getElementById('prova2').style.transform = 'translateX(-276px)';
+    document.getElementById('prova3').style.transform = 'translateX(-276px)';
+    document.getElementById('prova4').style.transform = 'translateX(-276px)'; */
+    console.log('ok')
+
     
+
 }
