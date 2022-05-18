@@ -9,7 +9,6 @@ body {
     font-size: 100%;
     margin: 0 auto;
     font-family: "Myfont";
-    width: 100%;
 }
 
 .lni-menu {
@@ -22,15 +21,9 @@ h3 span {
     font-size: 1.2rem;
 }
 
-h3,
-.displayflex i {
+h3 {
     font-size: 1.2rem;
     padding: 1rem;
-}
-
-.displayflex i{
-    font-size: 2rem;
-   color: rgba(154, 154, 154, 0.76);
 }
 
 span {
@@ -42,7 +35,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%;
+    width: 88%;
     position: sticky;
     top: 0px;
     padding: 1.5rem 0.8rem 0 0.8rem;
@@ -128,7 +121,6 @@ input#menu_btn:checked~nav {
 .img_carosello {
     width: 92%;
     margin: auto;
-    
 
 }
 
@@ -144,11 +136,6 @@ input#menu_btn:checked~nav {
 
 }
 
-.carosello div img {
-     width: 22rem;
-    height: 150px;
-}
-
 .pallini {
     width: 20%;
     overflow: hidden;
@@ -156,31 +143,19 @@ input#menu_btn:checked~nav {
     margin: 3rem auto;
 }
 
-.pallini button{
-    height: 13px;
-    color: #c53416;
-    background-color: #FF4F02;
+.pallini button {
+    width: 3px;
+    height: 10px;
     border: none;
     background-color: lightgray;
     border-radius: 50%;
-
-
-}
-
-.displayflex{
-    display: flex;
-    justify-content:space-between
     
 }
 
-#prova1 {
-    transition: width 1s ease-in;
-}
-#prova1:hover {
-    width: 0;
-}
 
-
+/* .carosello div img {
+    width: 100%;
+} */
 
 @media screen and (max-width:768px) {
     header nav {
@@ -260,7 +235,6 @@ hr {
     
 }    
 .title_blog{
-    color: white;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -276,7 +250,7 @@ hr {
 .blog_container {
     height: auto;
     text-align: center;
-    margin: 1rem 0.9rem 4rem 0.9rem;
+    margin: 1rem 1rem 4rem 1rem;
     background-color: white;
 }
 
@@ -297,7 +271,7 @@ hr {
 
 .more_info {
     text-align: left;
-    padding: 0 0.9rem;
+    padding: 0 0.8rem;
 }
 
 .text {
@@ -393,18 +367,64 @@ hr {
 }
 
 }
+@media only screen and (min-width: 1200px){
+    .blog_container{
 
+      /*   position: relative;
+ */
+        display: flex;
+       flex-wrap: wrap;
+        width: 70%;
+        justify-content: center; 
+        margin: 0 auto;
+        background-color:initial;
+        
+    }
+    .blog_container hr{
+        width: 40%;
+        display: inline-block;
+        margin: 1em auto;
+    }
+    .blog_img{
+         width: 25%; 
+         height: auto;   
+         background-color: white; 
+         position: relative;   
+    }
 
-  @media only screen and (min-width: 1200px) {
-    .title_grey{
-        width:40% ;
-        margin:auto
+    .text {
+        position: relative;
+        width: 50%;
+        height: auto;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 1.5rem 1.5rem 1rem 1.5;
     }
-    
-    .text_grey{
-        width:65% ;
-        margin: auto;
+
+    .freccia_sx,
+    .freccia_dx {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        transform: rotate(45deg);
+        background-color: white;
+        display: inline-block;
+        z-index: 2;
     }
+
+    .freccia_sx {
+        top: 50px;
+        left: -25px;
+    }
+
+    .freccia_dx {
+        top: 50px;
+        right: -25px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
     .blog_container {
         display: flex;
         flex-wrap: wrap;
@@ -429,7 +449,7 @@ hr {
     }
 
     .text {
-        
+        /* position: relative; */
         width: 25%;
         height: auto;
         background-color: white;
@@ -437,27 +457,18 @@ hr {
         padding: 1.5rem 1.5rem 1rem 1.5;
     }
 
-      .freccia_sx,
+    .freccia_sx,
     .freccia_dx {
-        
+        /*  border: 1px solid black;  */
         position: absolute;
 
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
         transform: rotate(45deg);
         background-color: white;
         display: inline-block;
         z-index: 2;
-     }  
-     .freccia_sx {
-        top: 50px;
-        left: -20px;
-    }
-
-    .freccia_dx {
-        top: 50px;
-        right: -20px;
-    }
+     }
      .more_info{
          width: 70%;
         text-align: right;
@@ -467,9 +478,9 @@ hr {
     .more_info input{
         padding: 2rem 7rem;
         
-    } 
+    }
     
-} 
+}
 
 /* Claudia */
 .Menu {
@@ -555,6 +566,7 @@ span {
     font-size: 0.9rem;
     padding-top: 0.8rem;
     font-weight: lighter;
+    float: right;
 }
 
 .Prezzi li p {
@@ -563,56 +575,14 @@ span {
     padding: 0.8rem 0rem 0rem;
 }
 
-@media screen and (min-width: 768px) {
-    .Menu {
-        color: #333333;
-        display: block;
-        text-align: center;
-        font-size: 2.3rem;
-        line-height: 1.5;
-        padding: 4.5rem 1.7rem 9rem 1.7rem;
-    }
-    
-    .Menu h1 {
-        color: #2E2E2E;
-        padding: 2.5rem 0rem 0rem 0rem;
-    }
-    
-    span {
-        color: #FF530A;
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    .Titolo h3 {
-        font-size: 1.3rem;
-        font-weight: bold;
-        padding: 1.6rem 0rem;
-    }
-
-    .Titolo h3 span {
-        font-size: 1.3rem;
-    }
-
-    .trattini {
-        /* position: absolute; */
-        top: 0;
-        width: 100%;
-        height: 1px;
-        border: 1px dotted #C9C9C9;
-    }
-
-    .Prezzi li span {
-        color: #938463;
-        font-size: 0.9rem;
-        padding-top: 0.8rem;
-        font-weight: lighter;
-        float: right;
-    }
-
-
+.trattini {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border: 1px dotted #C9C9C9;
 }
+
 
 /* Vitalij */
 aside{
@@ -660,14 +630,29 @@ aside button {
 form textarea {
     display: flex;
     width: 90%;
-    margin: 1em auto;
-    height: 3em;
+    margin: auto;
+  height: 10em;
     padding-left: 1em;
-}
-form textarea {
-    height: 10em;
     padding-top: 1em;
 }
+.contattaci{
+    padding: 0 0.9rem 0 .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contattaci input{
+    width: 90%;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    width: 90%;
+    margin: auto;
+
+}
+
+   
+    
+
 .contattaci button {
     background-color: #ff530a;
     color: white;
@@ -750,4 +735,4 @@ footer div {
 footer div img {
     margin-right: 1em;
     margin-top: 2em;
-}
+}                      
