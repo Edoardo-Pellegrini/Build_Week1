@@ -176,7 +176,9 @@ input#menu_btn:checked~nav {
     height: auto;
     background-color: rgb(241, 241, 241);
     text-align: center;
-}
+    padding: 6rem 0;
+    }
+
 .grey_block span{
     text-transform: initial;
     font-weight: bold;
@@ -184,12 +186,12 @@ input#menu_btn:checked~nav {
 }
     .grey_block img{
     text-align: center;
-    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
 .title_grey {
-    margin: 0 1rem;
+    width: 50%;
+    margin: 0 auto;
 }
 .blog_food span{
     text-transform: initial;
@@ -199,13 +201,14 @@ input#menu_btn:checked~nav {
 }
 
 hr {
-    width: 10rem;
+    
+    width: 9rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    
 }
 
 .text_grey {
-    line-height: 2rem;
+    line-height: 1.5rem;
     padding: 2rem;
 }
 
@@ -219,7 +222,6 @@ hr {
     width: 100%;
    height: 100%;
     background-image: url(../images/blog/blog-bg.jpg) ;
-    background-color: rgba(0, 0, 0, 0.186);
 
     background-size:cover;
     background-repeat: no-repeat;
@@ -229,17 +231,23 @@ hr {
 
 }
 
-.scuro {
-    background-color: rgba(0, 0, 0, 0.186);
+ .scuro {
+    background-image: url(../images/overlay-pattern.png);
     z-index: 1; 
     
-}   
+}    
 .title_blog{
     text-align: center;
-    margin: 0 0;
-    padding: 4rem 2rem 0.5rem 2rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 6rem 2rem 0.5rem 2rem;
 }
-
+.title_blog h2{
+    font-size: 1.2rem;
+}
+.blog_food hr{
+    margin-bottom: 2rem;
+}
 
 .blog_container {
     height: auto;
@@ -254,8 +262,6 @@ hr {
 
 .blog_container img {
     width: 100%;
-
-
     transition: 1s;
 }
 
@@ -272,6 +278,18 @@ hr {
 
 .text {
     padding: 1.5rem 1.5rem;
+}
+.blog_container h3{
+    font-weight: bold;
+    padding: 0;   
+}
+.blog_container hr{
+    width: 25%;
+    margin: 1rem auto;
+}
+.blog_container p{
+    font-size: 0.8em;
+    color: #938463;
 }
 
 .more_info input {
@@ -292,11 +310,19 @@ hr {
 
 
 @media screen and (min-width: 768px) {
+   
+    .title_grey{
+    width: 50%;
+    }
+     .title_grey h2{
+        font-size: 2rem;
+    } 
+    
     .blog_container {
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 90%;
         justify-content: center;
         margin: 0 auto;
         background-color: initial;
@@ -314,7 +340,7 @@ hr {
      height: auto;
     background-color: white;
     box-sizing: border-box;
-    padding: 1.5rem 1.5rem 1rem 1.5;
+    padding: 3rem 2rem;
 }
 .freccia_sx, .freccia_dx{
      position: absolute; 
