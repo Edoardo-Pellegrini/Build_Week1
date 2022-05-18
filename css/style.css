@@ -631,7 +631,7 @@ aside button {
 }
 form textarea {
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: auto;
   height: 10em;
     padding-left: 1em;
@@ -639,21 +639,10 @@ form textarea {
 }
 .contattaci{
     padding: 0 0.9rem 0 .9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.contattaci input{
-    width: 90%;
-    padding-left: 1em;
-    margin-bottom: 1em;
-    width: 90%;
-    margin: auto;
-
 }
 
-   
-    
+
+
 
 .contattaci button {
     background-color: #ff530a;
