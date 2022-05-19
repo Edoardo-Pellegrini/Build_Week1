@@ -631,7 +631,8 @@ span {
 /* Vitalij */
 aside{
     background-image:url(../images/overlay-pattern2.png), url(../images/subscribe-bg.jpg) ;
-    background-size: repeat,cover;
+    background-size: auto ,cover;
+    background-repeat: repeat,no-repeat;
     background-attachment: fixed;
     text-align: center;
     height: 35em;
@@ -835,4 +836,76 @@ footer div img {
 footer>div:nth-child(2) h3{
   margin-top: 4em;
 }
-    	
+    
+@media screen and (min-width: 768px) and (max-width:1200px){
+    .info ul{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1em;
+    }
+    .info{
+        margin-bottom: 0%;
+    }
+    .contattaci button{
+        width:70% ;
+    }
+    .contattaci textarea{
+        margin-left:0;
+    }
+    aside div div{
+        display: flex;
+        width: 85%;
+        margin: auto;
+    }
+    aside button{
+        margin-left:0;
+        margin-top: 2.5em;
+        height: 4.3em;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    aside div div{
+       width: 65%;
+    }
+ 
+    .info{
+        display: flex;
+        flex-direction: column;
+       
+    } 
+    
+    footer div:first-child{ 
+        display: flex;  
+                     
+    }
+
+    footer > div:nth-child(2){
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        right: 1em;
+    }
+    footer > div:nth-child(2) h3{
+         margin-top:0 ;
+         top: 1em;
+    }
+    footer > div:nth-child(3){
+        position: absolute;
+        right: 6em;
+        top: 10em;
+    }
+    footer{
+       position: relative;
+    }
+  
+    
+   
+
+
+
+
+}
+
+
+
