@@ -281,23 +281,20 @@ header{
 .blog_food {
     width: 100%;
    height: 100%;
-    background-image: url(../images/blog/blog-bg.jpg) ;
-    background-color: rgba(0, 0, 0, 0.186);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: left;
+    background-image: url(../images/overlay-pattern2.png), url(../images/blog/blog-bg.jpg) ;
+    background-size: auto, cover;
+     background-repeat: repeat, no-repeat;
     background-attachment:fixed ;
 }
-
+/* 
 .pattern {
     background-image: url(../images/overlay-pattern.png);
     z-index: 2;    
 }   
 .scuro {
-    background-image: url(../images/overlay-pattern2.png);
-    /* background-color: #2e2e2e4d; */
+    background-image: url(../images/overlay-pattern2.png); 
     z-index: 1;    
-}
+} */
 .title_blog{
     text-align: center;
     color: white;
@@ -325,8 +322,8 @@ header{
     margin:1.4rem auto ;
 }
 .more_info{
-    text-align: left;
-    padding: 0 0.8rem;
+    margin: 0 auto 0 0.9rem;
+  
 }
 .text{
      padding: 1.5rem 1.5rem; 
@@ -351,8 +348,15 @@ header{
 }
 
 @media screen and (min-width: 768px ) {
+     html{
+        font-size: 110% ; 
+      }    
     .grey_block{
        padding: 2rem 0 4rem 0; 
+    }
+    .text_grey{
+        width: 80%;
+        margin: 0 auto;
     }
     .blog_container{
         position: relative; 
@@ -408,10 +412,17 @@ header{
 
 }
 @media only screen and (min-width: 1200px){
+    html{
+      font-size: 105% ;    
+    }
+    .text_grey{
+        width: 70%;
+        margin: 0 auto;
+    }
     .blog_container{
         display: flex;
        flex-wrap: wrap;
-        width: 70%;
+         width: 70%;
         justify-content: center; 
         margin: 0 auto;
         background-color:initial;
@@ -450,7 +461,8 @@ header{
         margin: 0 auto;
     }
     .more_info input{
-        padding: 2rem 7rem;
+        width: 25%;
+        padding: 2rem;
     }
 }   
 /* Claudia */
