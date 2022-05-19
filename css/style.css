@@ -44,6 +44,8 @@ body {
     font-family: "Myfont";
 }
 
+
+
 .fa-bars {
     color: #e94c3d;
     font-size: 20px;
@@ -67,36 +69,44 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   /*  width: 92%; */
     position: sticky;
     top: 0px;
     padding: 1.5rem 0.8rem 0 0.8rem;
     background-color: rgba(255, 255, 255, 0.76);
     z-index: 100;
-    margin: 0 1rem;
     margin-top: -79px;
 
 }
 
 
-#Menu_a_tendina {
-    z-index: 3;
+
+
+.immagine_zuppa{
+    position: relative;
 }
 
-/* .overlay {
-    width: 300px;
-    height: 300px;
-    z-index: 70;
-} */
 .immagine_zuppa img {
     width: 100%;
     z-index: 1;
 }
 
+.immagine_zuppa::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/overlay-pattern.png) #000000c5;
+        opacity: 0.4;
+}
+
 header nav {
     margin-top: 2.5rem;
     position: relative;
-
+    z-index: 3;
 }
 
 header nav ul li a {
@@ -121,7 +131,7 @@ input#menu_btn:checked~nav {
 
 
 
-#Menu_a_tendina ul li:after {
+nav ul li:after {
     display: block;
     content: '';
     border-bottom: solid 2px #ff5333;
@@ -130,14 +140,12 @@ input#menu_btn:checked~nav {
     transition: transform 300ms ease-in-out;
 }
 
-
-
-#Menu_a_tendina ul li:hover:after {
+nav ul li:hover::after {
     transform: scaleX(1);
 }
 
 
-#Menu_a_tendina ul li:after {
+nav ul li:after {
     transform-origin: 0 50%;
 }
 
@@ -145,10 +153,12 @@ input#menu_btn:checked~nav {
 
 
 .img_carosello {
-    width: 92%;
+    width: 95%;
     margin: auto;
 
 }
+
+
 
 .carosello {
     display: flex;
@@ -157,11 +167,6 @@ input#menu_btn:checked~nav {
     margin: auto;
 }
 
-.carosello div {
-    width: 50%;
-    height: 100px;
-
-}
 
 .displayflex{
     margin: 30px 0 40px;
@@ -182,7 +187,7 @@ input#menu_btn:checked~nav {
     
 }
 .pallini  a {
-    color: #d3d3d3;
+    color: lightgray;
 }
 
 .pallini a i{
@@ -196,6 +201,7 @@ input#menu_btn:checked~nav {
 }
 
 
+
 @media screen and (max-width:768px) {
     header nav {
         height: 0;
@@ -203,6 +209,7 @@ input#menu_btn:checked~nav {
         position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
+
     }
 
 }
@@ -215,23 +222,21 @@ input#menu_btn:checked~nav {
   
 header{
     flex-wrap:nowrap;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+    margin-top: -79px;
+    
 }
     header nav {
         overflow:visible;
     }
 
-    #Menu_a_tendina ul{
+    nav ul{
         display:flex;
         
         position:relative;
         top:-40px;
     }
 
-    #Menu_a_tendina ul li{
+    nav ul li{
         margin-left: 20px;
     }
     header figure img {
