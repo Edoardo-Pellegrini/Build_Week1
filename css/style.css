@@ -716,14 +716,18 @@ span {
 
 /* Vitalij */
 aside{
-    background-image: url(../images/subscribe-bg.jpg);
-    background-size: cover;
+    background-image:url(../images/overlay-pattern2.png), url(../images/subscribe-bg.jpg) ;
+    background-size: repeat,cover;
     background-attachment: fixed;
     text-align: center;
     height: 35em;
     color: white;
     padding: -1em;
     margin-bottom: 6em;
+}
+aside img{
+    width: 100%;
+    height: 100%;
 }
 aside>div {
     position: relative;
@@ -732,30 +736,50 @@ aside>div {
 aside p:first-child {
     font-size: 1.5em;
     font-weight: bold;
-}
-aside p:first-child span {
 
-    font-size: 0.8em;
 }
-aside p:last-child {
-    margin-top: 3em;
+ .rigona ~ p{
+    color: white;
+    font-size: 1.1em;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+    
 }
+aside  span {
+
+    font-size: 0.6em;
+}
+aside hr{
+    margin-top: 2.5em;
+    margin-bottom: 1.3em;
+}
+
 aside input {
     height: 5em;
     width: 90%;
     margin-top: 3em;
     border: 0;
+    padding-left: 1em;
+
+   
+    
+}
+aside h3{
+    font-size: 1.8em;
 }
 aside button {
     background-color: #7EC3BB;
     border: 0;
-    height: 5em;
+    height: 4em;
     color: white;
-    width: 45%;
+    width: 50%;
     display: block;
     margin-top: 2em;
     font-weight: bold;
-    margin-left: 1.5em;
+    margin-left: 0.9rem;
+    font-family: Myfont;
+    letter-spacing: 0.1em;
+    font-size: 1em;
 }
 form textarea {
     display: flex;
@@ -820,9 +844,12 @@ footer>div:first-child i{
 footer>div:nth-child(2) a{
     font-size: 1.2rem;
 }
+address{
+  color:#474747 ;  
+}
 
 footer p{
-    color:#474747 ;
+    color:#474747 ;  
 }
 footer i, footer div:nth-last-child(2) a{
    color: #B0B0B0;
@@ -843,6 +870,12 @@ footer a {
 footer li {
     margin-bottom: 1.5em;
 
+}
+footer  div:nth-child(2)  p:first-child{
+    font-size: 1.125em;
+}
+footer  div:nth-child(3)  p:first-child{
+    font-size: 1.3em;
 }
 footer div:first-child  li {
     margin-bottom: 2em;
@@ -867,13 +900,13 @@ footer>div:last-child {
    
 }
 footer > div:nth-last-child(1) p{
-    line-height: 1.5em;
-    font-size: 0.82em;
-    padding: 1.2em 2.2em 0 2.2em;
+    line-height: 1.5em; 
+    padding: 1.2em 1.9em 0 1.9em;
     font-weight: 500;
-    font-size: 0.75em;
-    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
     color: #454545;
+    font-size: 0.7;
 }
 footer > div:nth-last-child(1) h3{
     margin-top: 0;
@@ -885,4 +918,7 @@ footer div img {
     margin-right: 1em;
     margin-top: 2em;
 }   
+footer>div:nth-child(2) h3{
+  margin-top: 4em;
+}
     	
