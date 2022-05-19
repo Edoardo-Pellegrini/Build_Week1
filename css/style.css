@@ -44,6 +44,8 @@ body {
     font-family: "Myfont";
 }
 
+
+
 .fa-bars {
     color: #e94c3d;
     font-size: 20px;
@@ -67,36 +69,45 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   /*  width: 92%; */
     position: sticky;
     top: 0px;
-    padding: 1.5rem 0.8rem 0 0.8rem;
+    padding: 1.5rem 0.8rem 0.3rem 0.8rem;
     background-color: rgba(255, 255, 255, 0.76);
     z-index: 100;
     margin: 0 1rem;
-    margin-top: -79px;
+    margin-top: -55px;
 
 }
 
 
-#Menu_a_tendina {
-    z-index: 3;
+
+
+.immagine_zuppa{
+    position: relative;
 }
 
-/* .overlay {
-    width: 300px;
-    height: 300px;
-    z-index: 70;
-} */
 .immagine_zuppa img {
     width: 100%;
     z-index: 1;
 }
 
+.immagine_zuppa::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/overlay-pattern.png) #000000c5;
+        opacity: 0.4;
+}
+
 header nav {
     margin-top: 2.5rem;
     position: relative;
-
+    z-index: 3;
 }
 
 header nav ul li a {
@@ -121,7 +132,7 @@ input#menu_btn:checked~nav {
 
 
 
-#Menu_a_tendina ul li:after {
+nav ul li:after {
     display: block;
     content: '';
     border-bottom: solid 2px #ff5333;
@@ -130,14 +141,13 @@ input#menu_btn:checked~nav {
     transition: transform 300ms ease-in-out;
 }
 
-
-
-#Menu_a_tendina ul li:hover:after {
+nav ul li:hover::after {
     transform: scaleX(1);
+    
 }
 
 
-#Menu_a_tendina ul li:after {
+nav ul li:after {
     transform-origin: 0 50%;
 }
 
@@ -145,66 +155,69 @@ input#menu_btn:checked~nav {
 
 
 .img_carosello {
-    width: 92%;
+    width: 95%;
     margin: auto;
 
 }
 
+
+
 .carosello {
     display: flex;
+    width: 90%;
     height: 200px;
     overflow: hidden;
     margin: auto;
 }
 
-.carosello div {
-    width: 50%;
-    height: 100px;
-
-}
 
 .displayflex{
+    margin: 30px 0 40px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .displayflex .fa-angle-right{
-    color: lightgray;
+    color: rgb(150, 144, 144);
+    font-size: 30px;
 }
 
 .pallini {
     width: 50%;
     overflow: hidden;
     text-align: center;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 3rem auto;
+    
 }
 .pallini  a {
-    font-size: 40px;
-    color: #2E2E2E;
+    color: lightgray;
 }
 
-.pallini .fa-circle-small {
-
+.pallini a i{
+    font-size: 10px;
+    border-radius: 50%;
     background-color: lightgray;
-    
-    
 }
 
-.pallini a:active{
-    color:red;
-    
-    
+.pallini a:focus{
+    color:#FF5333; 
 }
+
 
 
 @media screen and (max-width:768px) {
     header nav {
         height: 0;
         overflow: hidden;
-        position: relative;
+        position: absolute;
+        
+        background-color: rgba(255, 255, 255, 0.76);
         width: 100%;
+        top:12.7px;
+        left:0px;
+        
         transition: height 0.5s ease-out;
+
     }
 
 }
@@ -218,27 +231,31 @@ input#menu_btn:checked~nav {
 header{
     flex-wrap:nowrap;
     width: 90%;
-    margin: 0 auto;
+    margin: -85px auto 0 auto;
     padding-left: 0;
     padding-right: 0;
 }
     header nav {
         overflow:visible;
+        
     }
 
-    #Menu_a_tendina ul{
+    nav ul{
         display:flex;
         
         position:relative;
         top:-40px;
     }
 
-    #Menu_a_tendina ul li{
+    nav ul li{
         margin-left: 20px;
     }
     header figure img {
         margin: 10px;
     }
+}
+@media screen and(min-width:1200px) {
+    
 }
 
 /* Simone */
@@ -281,23 +298,20 @@ header{
 .blog_food {
     width: 100%;
    height: 100%;
-    background-image: url(../images/blog/blog-bg.jpg) ;
-    background-color: rgba(0, 0, 0, 0.186);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: left;
+    background-image: url(../images/overlay-pattern2.png), url(../images/blog/blog-bg.jpg) ;
+    background-size: auto, cover;
+     background-repeat: repeat, no-repeat;
     background-attachment:fixed ;
 }
-
+/* 
 .pattern {
     background-image: url(../images/overlay-pattern.png);
     z-index: 2;    
 }   
 .scuro {
-    background-image: url(../images/overlay-pattern2.png);
-    /* background-color: #2e2e2e4d; */
+    background-image: url(../images/overlay-pattern2.png); 
     z-index: 1;    
-}
+} */
 .title_blog{
     text-align: center;
     color: white;
@@ -325,8 +339,8 @@ header{
     margin:1.4rem auto ;
 }
 .more_info{
-    text-align: left;
-    padding: 0 0.8rem;
+    margin: 0 auto 0 0.9rem;
+  
 }
 .text{
      padding: 1.5rem 1.5rem; 
@@ -351,8 +365,15 @@ header{
 }
 
 @media screen and (min-width: 768px ) {
+     html{
+        font-size: 110% ; 
+      }    
     .grey_block{
        padding: 2rem 0 4rem 0; 
+    }
+    .text_grey{
+        width: 80%;
+        margin: 0 auto;
     }
     .blog_container{
         position: relative; 
@@ -408,10 +429,17 @@ header{
 
 }
 @media only screen and (min-width: 1200px){
+    html{
+      font-size: 105% ;    
+    }
+    .text_grey{
+        width: 70%;
+        margin: 0 auto;
+    }
     .blog_container{
         display: flex;
        flex-wrap: wrap;
-        width: 70%;
+         width: 70%;
         justify-content: center; 
         margin: 0 auto;
         background-color:initial;
@@ -450,7 +478,8 @@ header{
         margin: 0 auto;
     }
     .more_info input{
-        padding: 2rem 7rem;
+        width: 25%;
+        padding: 2rem;
     }
 }   
 /* Claudia */
@@ -653,7 +682,7 @@ aside p:first-child {
     font-weight: bold;
 
 }
- .rigona ~ p{
+ aside .rigona ~ p{
     color: white;
     font-size: 1.1em;
     padding-right: 0.9rem;
