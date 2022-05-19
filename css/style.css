@@ -71,10 +71,11 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0px;
-    padding: 1.5rem 0.8rem 0 0.8rem;
+    padding: 1.5rem 0.8rem 0.3rem 0.8rem;
     background-color: rgba(255, 255, 255, 0.76);
     z-index: 100;
-    margin-top: -79px;
+    margin: 0 1rem;
+    margin-top: -55px;
 
 }
 
@@ -142,6 +143,7 @@ nav ul li:after {
 
 nav ul li:hover::after {
     transform: scaleX(1);
+    
 }
 
 
@@ -162,6 +164,7 @@ nav ul li:after {
 
 .carosello {
     display: flex;
+    width: 90%;
     height: 200px;
     overflow: hidden;
     margin: auto;
@@ -175,7 +178,7 @@ nav ul li:after {
 }
 
 .displayflex .fa-angle-right{
-    color: rgb(180, 180, 180);
+    color: rgb(150, 144, 144);
     font-size: 30px;
 }
 
@@ -206,8 +209,13 @@ nav ul li:after {
     header nav {
         height: 0;
         overflow: hidden;
-        position: relative;
+        position: absolute;
+        
+        background-color: rgba(255, 255, 255, 0.76);
         width: 100%;
+        top:12.7px;
+        left:0px;
+        
         transition: height 0.5s ease-out;
 
     }
@@ -222,11 +230,14 @@ nav ul li:after {
   
 header{
     flex-wrap:nowrap;
-    margin-top: -79px;
-    
+    width: 90%;
+    margin: -85px auto 0 auto;
+    padding-left: 0;
+    padding-right: 0;
 }
     header nav {
         overflow:visible;
+        
     }
 
     nav ul{
@@ -242,6 +253,9 @@ header{
     header figure img {
         margin: 10px;
     }
+}
+@media screen and(min-width:1200px) {
+    
 }
 
 /* Simone */
