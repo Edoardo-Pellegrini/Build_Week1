@@ -164,37 +164,35 @@ input#menu_btn:checked~nav {
 }
 
 .displayflex{
+    margin: 30px 0 40px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .displayflex .fa-angle-right{
-    color: lightgray;
+    color: rgb(180, 180, 180);
+    font-size: 30px;
 }
 
 .pallini {
     width: 50%;
     overflow: hidden;
     text-align: center;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 3rem auto;
+    
 }
 .pallini  a {
-    font-size: 40px;
-    color: #2E2E2E;
+    color: lightgray;
 }
 
-.pallini .fa-circle-small {
-
+.pallini a i{
+    font-size: 10px;
+    border-radius: 50%;
     background-color: lightgray;
-    
-    
 }
 
-.pallini a:active{
-    color:red;
-    
-    
+.pallini a:focus{
+    color:#FF5333; 
 }
 
 
