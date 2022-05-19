@@ -3,6 +3,7 @@ h2{
     font-size: 1.5rem;
 }
 h3{
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -22,6 +23,10 @@ p{      /* p piccolo */
 }
 .rig{           /* hr piccola */
     width:5rem;
+}
+span{
+    font-weight: bold;
+    color: #ff4f02;
 }
     
 
@@ -247,137 +252,121 @@ header{
 /* Simone */
 
 /* Blocco Grigio */
-.grey_block {
+.grey_block{
     width: 100%;
     height: auto;
     background-color: rgb(241, 241, 241);
     text-align: center;
-    padding: 6rem 0;
-    }
-
+}
 .grey_block span{
     text-transform: initial;
     font-weight: bold;
     color: #ff530a;
 }
-    .grey_block img{
+.grey_block img{
     text-align: center;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
-.title_grey {
-    width: 50%;
-    margin: 0 auto;
+.title_grey{
+    width: 70%;
+    margin: 0 auto 3rem auto; 
 }
-.blog_food span{
+ .blog_food span{
     text-transform: initial;
     font-weight: bold;
-    color: #ff530a;
-
+    color: #ff4f02;
 }
-
-.text_grey {
-    line-height: 1.5rem;
-    padding: 2rem;
+.grey_block hr{
+    margin-top: 2rem;
 }
-
-.text_grey p {
-    color: grey;
-
+.text_grey{
+    padding: 2rem 0.9rem 4rem 0.9rem;
 }
 
 /* Blocco Info Menu */
 .blog_food {
     width: 100%;
-    height: 100%;
+   height: 100%;
     background-image: url(../images/blog/blog-bg.jpg) ;
+    background-color: rgba(0, 0, 0, 0.186);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: left;
     background-attachment:fixed ;
 }
 
- .scuro {
+.pattern {
     background-image: url(../images/overlay-pattern.png);
-    z-index: 1; 
-    
-}    
-.title_blog{
-    color: white;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    padding: 6rem 2rem 0.5rem 2rem;
+    z-index: 2;    
+}   
+.scuro {
+    background-image: url(../images/overlay-pattern2.png);
+    /* background-color: #2e2e2e4d; */
+    z-index: 1;    
 }
-.title_blog h2{
-    font-size: 1.2rem;
+.title_blog{
+    text-align: center;
+    color: white;
+    margin: 0 0;
+    padding: 6rem 2rem 2rem 2rem; 
 }
 
-.blog_container {
+.blog_container{
     height: auto;
     text-align: center;
-    margin: 1rem 1rem 4rem 1rem;
+    margin: 3rem 0.9rem 4rem 0.9rem;
     background-color: white;
 }
-
-.blog_img {
+.blog_img{
     overflow: hidden;
 }
-
-.blog_container img {
+.blog_container img{
     width: 100%;
-    transition: 1s;
+    transition: 1s; 
 }
-
-.blog_container img:hover {
-    transform: scale(1.2) rotate(10deg);
+.blog_container img:hover{
+    transform: scale(1.2) rotate(10deg);   
 }
-
-.more_info {
+.blog_container .rig{
+    margin:1.4rem auto ;
+}
+.more_info{
     text-align: left;
     padding: 0 0.8rem;
 }
-
-.text {
-    padding: 1.5rem 1.5rem;
+.text{
+     padding: 1.5rem 1.5rem; 
 }
-.blog_container h3{
-    font-weight: bold;
-    padding: 0;   
-}
-.more_info input {
+.more_info input{
     font-family: "Myfont";
-    padding: 2rem 4rem;
-    background-color: #ff530a;
+    font-size: 0.9rem;
+    padding: 2rem 5rem;
+    background-color: #ff4f02;
     color: white;
-    border: none;
-    transition-property: background-color;
-    transition-duration: 1s;
+    border: 1px solid #ff4f02;
+    transition-property: background-color ;
+    transition-duration: 0.5s;
     margin-bottom: 5rem;
 }
 
 .more_info input:hover{
     background-color: #ff530a00;
-    border-radius: 10px;
-        color: #ff530a;
-        border: 1px solid #ff530a;
+        color: #ff4f02;
+        border: 1px solid #ff4f02;
+        border-radius: 10px;
 }
 
-
-@media screen and (min-width: 768px) {
-   
-    .title_grey{
-    width: 50%;
+@media screen and (min-width: 768px ) {
+    .grey_block{
+       padding: 2rem 0 4rem 0; 
     }
-     .title_grey h2{
-        font-size: 2rem;
-    } 
-    
-    .blog_container {
-        position: relative;
+    .blog_container{
+        position: relative; 
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
+        width: 80%;
         justify-content: center;
         margin: 0 auto;
         background-color: initial;
@@ -386,21 +375,23 @@ header{
         position: relative; 
         width: 50%; 
         height: auto;   
-        background-color: white; 
-          
+        background-color: white;        
    }
+   .blog_food .rigona{
+    margin: 0 auto 2.5rem auto;
+}
    .text{
     position: relative; 
      width: 50%; 
      height: auto;
     background-color: white;
     box-sizing: border-box;
-    padding: 3rem 2rem;
+    padding: 1.5rem 1.5rem 1rem 1.5;
 }
 .freccia_sx, .freccia_dx{
      position: absolute; 
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     transform: rotate(45deg);
     background-color: white;
     display: inline-block; 
@@ -408,11 +399,11 @@ header{
  }
  .freccia_sx{
     top: 50px;
-    left: -25px; 
+    left: -15px; 
 }
 .freccia_dx{ 
     top: 50px;
-    right: -25px; 
+    right: -15px; 
 }
 .more_info{
     text-align: center;
@@ -426,9 +417,6 @@ header{
 }
 @media only screen and (min-width: 1200px){
     .blog_container{
-
-      /*   position: relative;
- */
         display: flex;
        flex-wrap: wrap;
         width: 70%;
@@ -449,81 +437,18 @@ header{
          position: relative;   
     }
 
-    .text {
-        position: relative;
-        width: 50%;
-        height: auto;
+    .text{
+         width: 25%; 
+         height: auto;
         background-color: white;
         box-sizing: border-box;
         padding: 1.5rem 1.5rem 1rem 1.5;
     }
-
-    .freccia_sx,
-    .freccia_dx {
+    .freccia_sx, .freccia_dx{
         position: absolute;
-        width: 3rem;
-        height: 3rem;
         transform: rotate(45deg);
         background-color: white;
-        display: inline-block;
-        z-index: 2;
-    }
-
-    .freccia_sx {
-        top: 50px;
-        left: -25px;
-    }
-
-    .freccia_dx {
-        top: 50px;
-        right: -25px;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-    .blog_container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        justify-content: center;
-        margin: 0 auto;
-        background-color: initial;
-
-    }
-
-    .blog_container hr {
-        width: 40%;
-        display: inline-block;
-        margin: 1em auto;
-    }
-
-    .blog_img {
-        width: 25%;
-        height: auto;
-        background-color: white;
-        position: relative;
-    }
-
-    .text {
-        /* position: relative; */
-        width: 25%;
-        height: auto;
-        background-color: white;
-        box-sizing: border-box;
-        padding: 1.5rem 1.5rem 1rem 1.5;
-    }
-
-    .freccia_sx,
-    .freccia_dx {
-        /*  border: 1px solid black;  */
-        position: absolute;
-
-        width: 3rem;
-        height: 3rem;
-        transform: rotate(45deg);
-        background-color: white;
-        display: inline-block;
+        display: inline-block; 
         z-index: 2;
      }
      .more_info{
@@ -534,11 +459,8 @@ header{
     }
     .more_info input{
         padding: 2rem 7rem;
-        
     }
-    
-}
-
+}   
 /* Claudia */
 .Menu {
     color: #333333;
