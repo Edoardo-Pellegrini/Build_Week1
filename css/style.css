@@ -70,17 +70,18 @@ header {
    /*  width: 92%; */
     position: sticky;
     top: 0px;
-    padding: 1.5rem 0.8rem 0 0.8rem;
+    padding: 1.5rem 0.8rem 0.3rem 0.8rem;
     background-color: rgba(255, 255, 255, 0.76);
     z-index: 100;
     margin: 0 1rem;
-    margin-top: -79px;
+    margin-top: -55px;
 
 }
 
 
 #Menu_a_tendina {
     z-index: 3;
+    
 }
 
 /* .overlay {
@@ -96,6 +97,7 @@ header {
 header nav {
     margin-top: 2.5rem;
     position: relative;
+    
 
 }
 
@@ -134,6 +136,7 @@ input#menu_btn:checked~nav {
 
 #Menu_a_tendina ul li:hover:after {
     transform: scaleX(1);
+    
 }
 
 
@@ -152,6 +155,7 @@ input#menu_btn:checked~nav {
 
 .carosello {
     display: flex;
+    width: 90%;
     height: 200px;
     overflow: hidden;
     margin: auto;
@@ -170,7 +174,7 @@ input#menu_btn:checked~nav {
 }
 
 .displayflex .fa-angle-right{
-    color: rgb(180, 180, 180);
+    color: rgb(150, 144, 144);
     font-size: 30px;
 }
 
@@ -200,8 +204,13 @@ input#menu_btn:checked~nav {
     header nav {
         height: 0;
         overflow: hidden;
-        position: relative;
+        position: absolute;
+        
+        background-color: rgba(255, 255, 255, 0.76);
         width: 100%;
+        top:12.7px;
+        left:0px;
+        
         transition: height 0.5s ease-out;
     }
 
@@ -216,12 +225,13 @@ input#menu_btn:checked~nav {
 header{
     flex-wrap:nowrap;
     width: 90%;
-    margin: 0 auto;
+    margin: -85px auto 0 auto;
     padding-left: 0;
     padding-right: 0;
 }
     header nav {
         overflow:visible;
+        
     }
 
     #Menu_a_tendina ul{
@@ -237,6 +247,9 @@ header{
     header figure img {
         margin: 10px;
     }
+}
+@media screen and(min-width:1200px) {
+    
 }
 
 /* Simone */
