@@ -282,8 +282,24 @@ header{
         margin: 10px;
     }
 }
-@media screen and(min-width:1200px) {
-    
+@media screen and (min-width:1200px) {
+    header{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img_carosello{
+        width: 80%;
+        margin: 3rem auto 0 auto;
+    }
+    .displayflex{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .carosello img{
+    width: 210px;
+    padding: 10px;
+}
 }
 
 /* Simone */
@@ -469,8 +485,8 @@ header{
     }
     .blog_container{
         display: flex;
-       flex-wrap: wrap;
-         width: 70%;
+        flex-wrap: wrap;
+        width: 80%;
         justify-content: center; 
         margin: 0 auto;
         background-color:initial;
@@ -503,7 +519,7 @@ header{
         z-index: 2;
      }
      .more_info{
-         width: 70%;
+         width: 80%;
         text-align: right;
         padding: 0 3rem;
         margin: 0 auto;
@@ -681,12 +697,14 @@ span {
 
 @media screen and (min-width: 1200px) {
     .Menu {
+        width: 80%;
+        margin: 0 auto;
         color: #333333;
         display: block;
         text-align: center;
         font-size: 2.3rem;
         line-height: 1.5;
-        padding: 4.5rem 12rem 9rem 12rem;
+        
     }
 }
 
@@ -760,22 +778,27 @@ aside button {
     letter-spacing: 0.1em;
     font-size: 1em;
 }
+form{
+    width:90%;
+    margin: 0 auto;
+}
 form textarea {
-    display: flex;
-    width: 95%;
-    margin-bottom:  2.7em; 
+    
+    width: 100%;
+    margin: 1em auto 2.7em auto; 
+    box-sizing: border-box;
     height: 9em;
     padding-left: 1em;
     padding-top: 1em;
 }
 .contattaci{
-    width: 95%;
+    width: 100%;
     margin: auto;
    /*  padding: 0 0.9rem 0 0.9rem; */
    margin-bottom: 4em;
 }
 .contattaci form input{
-    width: 95%;
+    width:97.5%;
     margin-bottom: 1em;
     height: 3em;
     padding-left: 1em; 
@@ -957,13 +980,55 @@ footer>div:nth-child(2) h3{
        width: 65%;
     }
     .info{
+        /* flex-basis: 50%; */
         display: flex;
         flex-direction: column;
     } 
-    footer div:first-child{ 
-        display: flex;
+    footer>div:first-child div:last-child{ /* bl0g post */
+        /* flex-basis:50%; */
     }
-
+    footer div:first-child{    
+        display: flex;
+        /* width: 50%; */
+        margin: 0;
+        grid-area: "abc";
+    }
+    .contattaci{
+        width: 80%;
+        margin: 0 auto;
+}
+    .contattaci button{
+        width: 40%;
+        margin-right: 0;
+    }
+    /* footer>div:first-child, footer>div:nth-child(2)  {
+      display: flex;
+      flex-direction: row;
+      flex-basis: 33%;
+     
+    } */
+    footer>div:nth-child(2){ /* photo */
+        flex-direction: column;
+        /* width: 50%; */
+        grid-area: "abc2";
+        
+    }
+    footer>div:nth-child(2) h3:first-child{
+        margin-top: 0;
+    }
+    
+    footer:not(div:last-child){
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "abc abc"
+                         "copy copy "; 
+      grid-row: 2;
+    }
+.copy{
+    width: 100%;
+    grid-area:"copy"
+}
 }
     
 
