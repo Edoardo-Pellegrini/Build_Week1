@@ -88,39 +88,8 @@ function arrow() {
         slide++
         console.log(slide)
         return
-      }/* else if(slide==5){
-        document.getElementById('prova1').style.transform = "translateX(-1656px)";
-        document.getElementById('prova2').style.transform = "translateX(-1656px)";   
-        document.getElementById('prova3').style.transform = "translateX(-1656px)";
-        document.getElementById('prova4').style.transform = "translateX(-1656px)";
-        document.getElementById('prova5').style.transform = "translateX(-1656px)";
-        document.getElementById('prova6').style.transform = "translateX(-1656px)";
-        document.getElementById('prova7').style.transform = "translateX(-1656px)";
-        document.getElementById('prova8').style.transform = "translateX(-1656px)";
-
-        document.getElementsByClassName('fa-circle')[2].style.color = '#d3d3d3';
-        document.getElementsByClassName('fa-circle')[3].style.color = '#FF5333';
-
-        slide++
-        console.log(slide)
-        return
-      }else if(slide==6){
-        document.getElementById('prova1').style.transform = "translateX(-1932px)";
-        document.getElementById('prova2').style.transform = "translateX(-1932px)";   
-        document.getElementById('prova3').style.transform = "translateX(-1932px)";
-        document.getElementById('prova4').style.transform = "translateX(-1932px)";
-        document.getElementById('prova5').style.transform = "translateX(-1932px)";
-        document.getElementById('prova6').style.transform = "translateX(-1932px)";
-        document.getElementById('prova7').style.transform = "translateX(-1932px)";
-        document.getElementById('prova8').style.transform = "translateX(-1932px)";
-
-        document.getElementsByClassName('fa-circle')[2].style.color = '#d3d3d3';
-        document.getElementsByClassName('fa-circle')[3].style.color = '#FF5333';
-
-        slide++
-        console.log(slide)
-        return
-      } */else if(slide==5){
+      
+      }else if(slide==5){
         document.getElementById('prova1').style.transform = "translateX(0)";
         document.getElementById('prova2').style.transform = "translateX(0)";   
         document.getElementById('prova3').style.transform = "translateX(0)";
@@ -131,6 +100,7 @@ function arrow() {
         document.getElementById('prova8').style.transform = "translateX(0)";
 
         
+
 
         slide=0
         console.log(slide)
@@ -143,5 +113,58 @@ function arrow() {
     
 
     
+
+}
+function pallini(num){
+  if(num==1){
+    document.getElementById('prova1').style.transform = "translateX(-276px)";
+        document.getElementById('prova2').style.transform = "translateX(-276px)";   
+        document.getElementById('prova3').style.transform = "translateX(-276px)";
+        document.getElementById('prova4').style.transform = "translateX(-276px)";
+        document.getElementById('prova5').style.transform = "translateX(-276px)";
+        document.getElementById('prova6').style.transform = "translateX(-276px)";
+        document.getElementById('prova7').style.transform = "translateX(-276px)";
+        document.getElementById('prova8').style.transform = "translateX(-276px)";
+
+        document.getElementsByClassName('fa-circle')[3].style.color = '#d3d3d3';
+        document.getElementsByClassName('fa-circle')[0].style.color = '#FF5333';
+
+  }else if(num==2){
+        document.getElementById('prova1').style.transform = "translateX(-552px)";
+        document.getElementById('prova2').style.transform = "translateX(-552px)";   
+        document.getElementById('prova3').style.transform = "translateX(-552px)";
+        document.getElementById('prova4').style.transform = "translateX(-552px)";
+        document.getElementById('prova5').style.transform = "translateX(-552px)";
+        document.getElementById('prova6').style.transform = "translateX(-552px)";
+        document.getElementById('prova7').style.transform = "translateX(-552px)";
+        document.getElementById('prova8').style.transform = "translateX(-552px)";
+
+        document.getElementsByClassName('fa-circle')[0].style.color = '#d3d3d3';
+        document.getElementsByClassName('fa-circle')[1].style.color = '#FF5333';
+  }else if(num==3){
+        document.getElementById('prova1').style.transform = "translateX(-1104px)";
+        document.getElementById('prova2').style.transform = "translateX(-1104px)";   
+        document.getElementById('prova3').style.transform = "translateX(-1104px)";
+        document.getElementById('prova4').style.transform = "translateX(-1104px)";
+        document.getElementById('prova5').style.transform = "translateX(-1104px)";
+        document.getElementById('prova6').style.transform = "translateX(-1104px)";
+        document.getElementById('prova7').style.transform = "translateX(-1104px)";
+        document.getElementById('prova8').style.transform = "translateX(-1104px)";
+
+        document.getElementsByClassName('fa-circle')[1].style.color = '#d3d3d3';
+        document.getElementsByClassName('fa-circle')[2].style.color = '#FF5333';
+  }else if(num==4){
+        document.getElementById('prova1').style.transform = "translateX(-1380px)";
+        document.getElementById('prova2').style.transform = "translateX(-1380px)";   
+        document.getElementById('prova3').style.transform = "translateX(-1380px)";
+        document.getElementById('prova4').style.transform = "translateX(-1380px)";
+        document.getElementById('prova5').style.transform = "translateX(-1380px)";
+        document.getElementById('prova6').style.transform = "translateX(-1380px)";
+        document.getElementById('prova7').style.transform = "translateX(-1380px)";
+        document.getElementById('prova8').style.transform = "translateX(-1380px)";
+
+        document.getElementsByClassName('fa-circle')[2].style.color = '#d3d3d3';
+        document.getElementsByClassName('fa-circle')[3].style.color = '#FF5333';
+  }
 
 }
